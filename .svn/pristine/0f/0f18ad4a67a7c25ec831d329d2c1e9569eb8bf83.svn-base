@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:400px"></div>
+<!-- ECharts单文件引入 -->
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+
+    // 使用
+    require(
+        [
+            'echarts',
+            'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+        ],
+        function (ec) {
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = ec.init(document.getElementById('main'));
+
+            var option = {
+                tooltip: {
+                    show: true,
+                    trigger: 'axis',			//鼠标指向标识线
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data:{{ gzh| raw }}
+                },
+
+                xAxis : [
+                    {
+                        type : 'category',
+                        data :{{ gzh| raw }},
+                        axisLabel:{
+                            interval:0,      //横轴信息全显示
+                            rotate: -45	//-10度角倾斜
+                        }
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:"领券人数",
+                        type:"bar",
+                        itemStyle: {
+                            "normal": {
+                                color: function(params) {
+                                    // build a color map as your need.
+                                    var colorList = [
+                                        '#C1232B','#B5C334','#FCCE10','#E87C25','#27727B',
+                                        '#FE8463','#9BCA63','#FAD860','#F3A43B','#60C0DD',
+                                        '#D7504B','#C6E579','#F4E001','#F0805A','#26C0C0'
+                                    ];
+                                    return colorList[params.dataIndex]
+                                }
+                            }
+                        },
+                        data:{{datagzhcount}},
+                        markPoint : {
+                            "data" : [
+                                {"type" : 'max', "data": '最大值'},
+                                {"type" : 'min', "data": '最小值'}
+                            ]
+                        },
+                        markLine : {
+                            "data" : [
+                                {"type" : 'average', "data": '平均值'}
+                            ]
+                        }
+                    }
+                ]
+            };
+            // 为echarts对象加载数据
+            myChart.setOption(option);
+        }
+    );
+</script>
+</body>

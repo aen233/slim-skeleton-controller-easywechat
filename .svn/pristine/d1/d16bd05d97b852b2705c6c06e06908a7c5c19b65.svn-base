@@ -1,0 +1,35 @@
+<?php
+
+
+$app->get('/home','HomeController:welcome');
+$app->any('/data','HomeController:index');
+
+$app->get('/token','WeChatController:getToken');
+$app->any('/serve','WeChatController:serve');
+$app->any('/createcard','WeChatController:createcard');
+$app->get('/','HomeController:welcome');
+
+
+
+$app->group('/charts/',function (){
+    $this->get('index','IndexController:index');
+    $this->get('areapie','IndexController:countpie');
+    $this->get('countcount','IndexController:countcount');
+    $this->get('gzhpie','IndexController:gzhpie');
+    $this->get('funnel','IndexController:funnel');
+
+});
+
+
+$app->group('/card/',function(){
+    $this->get('create','WeCardController:createCard');
+    $this->get('qr','WeCardController:QR');
+    $this->any('tempinfo','WeCardController:tempinfo');
+    //$this->any('login','WeCardController:login');
+    //$this->get('search', 'WeCardController:fetchData');
+    //$this->get('openid', 'WeCardController:openIDs');
+});
+
+$app->group('/member', function(){
+      //$this->get('')
+});

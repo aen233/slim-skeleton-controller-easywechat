@@ -1,0 +1,30 @@
+<?php
+// Routes
+
+
+
+$app->get('/','App\Controllers\Home:home');
+
+$app->group('/',function (){
+    $this->get('sss','App\Controllers\Index:abc');
+
+    $this->get('user','App\Controllers\Home:users');
+    $this->get('check','App\Controllers\Home:ccheck');
+    $this->get('admin','App\Controllers\Home:admin');
+
+});
+$app->get('/token','App\Controllers\WeChat:getToken');
+$app->any('/serve','App\Controllers\WeChat:serve');
+
+$app->get('/hello/[{name}]', function ($request, $response, $args) {
+    // Sample log message
+    $this->logger->info("Slim-Skeleton 'hello/' route");
+
+    // Render index view
+    return $this->renderer->render($response, 'index.phtml', $args);
+});
+
+
+
+
+

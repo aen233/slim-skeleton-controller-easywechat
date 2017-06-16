@@ -1,0 +1,43 @@
+<?php
+
+namespace  App\Controllers;
+
+/**
+ * Class Index
+ * @package App\Controllers
+ */
+class WeChat extends Controller
+{
+    public function getToken()
+    {
+        $access_token =$this->wechat->access_token->getToken();
+        echo  $access_token;
+    }
+
+    public function serve(){
+        $server = $this->wechat->server;
+        $server->setMessageHandler(function ($message) {
+            $message['FromUserName']='oY_1bxDnn8N58psVGw-cMYOMLnyk';
+            $message['MsgType']='text';
+            return "您好！欢迎关注我!";
+        });
+        $response = $server->serve();
+        $response->send();
+    }
+
+
+
+    public function getuser(){
+        $userservice=$this->wechat->user;
+        $users=$userservice->lists();
+        echo "<pre>";
+        $data= $users->data;
+        $openids=$data['openid'];
+        var_dump($openids);
+         var_dump($userservice->batchGet($openids));
+
+    }
+}
+
+
+

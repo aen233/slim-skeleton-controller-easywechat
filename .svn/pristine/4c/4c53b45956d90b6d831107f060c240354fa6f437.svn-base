@@ -1,0 +1,83 @@
+<?php
+
+
+return [
+
+    'settings'=>[
+        'httpVersion' => '1.1',
+        'responseChunkSize' => 4096,
+        'outputBuffering' => 'append',
+        'determineRouteBeforeAppMiddleware' => false,
+        'displayErrorDetails' => true,
+        'addContentLengthHeader' => true,
+        'routerCacheFile' => false,
+
+
+        'mysql' => [
+            'database_type'    =>  'mysql',
+            'database_name'    =>  '_wx1_cnsaga',
+            'server'           =>  '192.168.0.20',
+            'username'         =>  'root',
+            'password'         =>  'SaGadb$Psw.',
+
+            //'server'           =>  'localhost',
+            //'password'         =>  'aen233',
+           // 'database_name'    =>  'card',
+            'port'             =>   3306,
+            'charset'          =>   'utf-8',
+            'option'           =>   [
+                PDO::ATTR_CASE    =>  PDO::CASE_NATURAL
+            ]
+        ],
+
+
+
+        //EasyWechat
+        'wechat'=>[
+
+            'debug'  => true,
+
+            'app_id'  => 'wxd119448c17cd65df',                      // AppID
+            'secret'  => 'f5ac998700e66440963ebf3a488cd840',        // AppSecret
+            'token'   => 'weixinceshi',                             // Token
+            'aes_key' => 'HwLVFqTbSa9t6QKQo1JZoY3cocpOAWwXvnp861e2diL',
+            'log' => [
+                'level'      => 'debug',
+                'permission' => 0777,
+                'file'       => '/home/phper/wechat.log',
+            ],
+
+
+            /**
+             * OAuth 配置
+             *
+             * scopes：公众平台（snsapi_userinfo / snsapi_base），开放平台：snsapi_login
+             * callback：OAuth授权完成后的回调页地址
+             */
+            'oauth' => [
+                'scopes'   => ['snsapi_userinfo'],
+                'callback' => '/examples/oauth_callback.php',
+            ],
+
+
+            /**
+             * 微信支付
+             */
+            'payment' => [
+                'merchant_id'        => 'your-mch-id',
+                'key'                => 'key-for-signature',
+                'cert_path'          => 'path/to/your/cert.pem', // XXX: 绝对路径！！！！
+                'key_path'           => 'path/to/your/key',      // XXX: 绝对路径！！！！
+                // 'device_info'     => '013467007045764',
+                // 'sub_app_id'      => '',
+                // 'sub_merchant_id' => '',
+                // ...
+            ],
+
+            'guzzle' => [
+                'timeout' => 3.0, // 超时时间（秒）
+                //'verify' => false, // 关掉 SSL 认证（强烈不建议！！！）
+            ],
+        ]
+    ]
+];

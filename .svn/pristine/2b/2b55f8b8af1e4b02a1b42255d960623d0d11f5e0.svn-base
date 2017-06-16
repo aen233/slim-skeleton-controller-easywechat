@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Controllers;
+
+/**
+ * Class Controller
+ * @package App\Controllers
+ */
+abstract class Controller
+{
+    protected $container;
+
+    /**
+     * Controller constructor.
+     * @param $container
+     */
+    public function __construct($container)
+    {
+        $this->container = $container;
+    }
+
+    /**
+     * 使用魔术方法访问动态属性
+     * @param $property
+     */
+    public function __get($property)
+    {
+        if($this->container->{$property}){
+            return $this->container->{$property};
+        }
+    }
+}

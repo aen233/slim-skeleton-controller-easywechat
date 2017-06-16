@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>绑定</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link href="../addons/member/template/mobile/static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../addons/member/template/mobile/static/css/license.css?v=201501061221" rel="stylesheet" type="text/css">
+    <script src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../addons/member/template/mobile/static/js/layer.m/layer.m.js"></script>
+
+    <script>
+        function checkfrom(){
+            var cardNum = $('input[name="cardNum"]').val();
+            var isOn =  $('input[name="isOn"]').val();
+//            var scorePass = $('input[name="scorePass"]').val();
+            if (cardNum == '') {
+                layer.open({
+                    content: '车牌号不能为空',
+                    style: 'background-color:#09C1FF; color:#fff; border:none;',
+                    time: 2
+                });
+                return false;
+            }
+
+            $.post("{php echo $this->createWebUrl('plateNumber')}",{"cardNum":cardNum,"isOn":isOn},function(msg){
+                alert(msg);
+//                if(msg.status){
+//                    var uniacid = "{$_W['uniacid']}";
+//                    layer.msg(msg.msg, 2, -1);
+////                    setTimeout("location.href='http://wx.cnsaga.com/app/index.php?i="+uniacid+"&c=entry&eid=1&wxref=mp.weixin.qq.com#wechat_redirect';",2000);
+//                }else{
+//                    layer.msg(msg.msg, 2, -1);
+//                }
+            });
+
+        }
+        function toupper(){
+            var num=document.getElementById('num').value;
+            document.getElementById('num').value=num.toUpperCase();
+
+        }
+    </script>
+</head>
+
+<body>
+<img src="../addons/member/template/mobile/static/img/license.png" width="100%">
+
+<section>
+    <div class="clr"></div>
+    <ul class="press_list">
+        <li onclick="cpselect()"><span><input type="text" value="{php echo empty($parkInfo['platenumber']) ?  '' :  $parkInfo['platenumber'] }" placeholder="{php echo empty($parkInfo['platenumber']) ?  '点此输入车牌号' :  $parkInfo['platenumber'] }" name="cardNum" id="cpselect" readonly  /></span></li>
+        <!--<li><span><input type="text" value="{php echo empty($parkInfo['scorePass']) ?  '' :  $parkInfo['scorePass'] }" placeholder="{php echo empty($parkInfo['scorePass']) ?  '点此输入积分抵现密码' :  $parkInfo['scorePass'] }" name="scorePass" id="scorePass"  /></span></li>-->
+        <li onclick="offon()"><span><input type="button"  readonly  class="useon"  /><input type="hidden" name="isOn" id="offon"  value="1" /><strong class="text2">使用积分抵停车费</strong></span></li>
+
+    </ul>
+</section>
+<div class="clr"></div>
+<div >
+    <input type="button" onclick="return checkfrom()"  value="立即绑定" id="but" /></div>
+<div class="clr"></div>
+<footer>
+    <br><br><br><br>
+</footer>
+
+<div class="d_n" id="cp" >
+    <div class="proys ahy">
+        <div class="clr"></div>
+        <input id="cpvalue" onclick="this.value='';$('#sheng').css('display','block');$('#zimu').css('display','none');$('#num').css('display','none')" value="" readonly>
+        <ul id="sheng">
+            <li onclick="cpadd('陕')">陕</li>
+            <li onclick="cpadd('晋')">晋</li>
+            <li onclick="cpadd('甘')">甘</li>
+            <li onclick="cpadd('川')">川</li>
+            <li onclick="cpadd('豫')">豫</li>
+            <li onclick="cpadd('湘')">湘</li>
+            <li onclick="cpadd('青')">青</li>
+            <li onclick="cpadd('宁')">宁</li>
+            <li onclick="cpadd('京')">京</li>
+            <li onclick="cpadd('津')">津</li>
+            <li onclick="cpadd('冀')">冀</li>
+            <li onclick="cpadd('蒙')">蒙</li>
+            <li onclick="cpadd('辽')">辽</li>
+            <li onclick="cpadd('吉')">吉</li>
+            <li onclick="cpadd('黑')">黑</li>
+            <li onclick="cpadd('苏')">苏</li>
+            <li onclick="cpadd('浙')">浙</li>
+            <li onclick="cpadd('皖')">皖</li>
+            <li onclick="cpadd('闽')">闽</li>
+            <li onclick="cpadd('沪')">沪</li>
+            <li onclick="cpadd('赣')">赣</li>
+            <li onclick="cpadd('鲁')">鲁</li>
+            <li onclick="cpadd('鄂')">鄂</li>
+            <li onclick="cpadd('粤')">粤</li>
+            <li onclick="cpadd('桂')">桂</li>
+            <li onclick="cpadd('渝')">渝</li>
+            <li onclick="cpadd('贵')">贵</li>
+            <li onclick="cpadd('云')">云</li>
+            <li onclick="cpadd('藏')">藏</li>
+            <li onclick="cpadd('新')">新</li>
+            <li onclick="cpadd('琼')">琼</li>
+        </ul>
+        <ul id="zimu" style="display:none">
+            <li onclick="cpadd('A')">A</li>
+            <li onclick="cpadd('B')">B</li>
+            <li onclick="cpadd('C')">C</li>
+            <li onclick="cpadd('D')">D</li>
+            <li onclick="cpadd('E')">E</li>
+            <li onclick="cpadd('F')">F</li>
+            <li onclick="cpadd('G')">G</li>
+            <li onclick="cpadd('H')">H</li>
+            <li onclick="cpadd('I')">I</li>
+            <li onclick="cpadd('J')">J</li>
+            <li onclick="cpadd('K')">K</li>
+            <li onclick="cpadd('L')">L</li>
+            <li onclick="cpadd('M')">M</li>
+            <li onclick="cpadd('N')">N</li>
+            <li onclick="cpadd('O')">O</li>
+            <li onclick="cpadd('P')">P</li>
+            <li onclick="cpadd('Q')">Q</li>
+            <li onclick="cpadd('R')">R</li>
+            <li onclick="cpadd('S')">S</li>
+            <li onclick="cpadd('K')">K</li>
+            <li onclick="cpadd('U')">U</li>
+            <li onclick="cpadd('V')">V</li>
+            <li onclick="cpadd('W')">W</li>
+            <li onclick="cpadd('X')">X</li>
+            <li onclick="cpadd('Y')">Y</li>
+            <li onclick="cpadd('Z')">Z</li>
+        </ul>
+        <input type="input" id="num" onChange="toupper()" placeholder="输入车牌后五位" class="num" />
+        <div class="clr"></div>
+        <input type="button" class="but2" value="取 消" onclick="cp_noreg()" />
+        <input type="button" class="but2" value="确 定" onclick="cp_n()" />
+    </div>
+</div>
+
+
+
+<script src="../addons/member/template/mobile/static/js/ac.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/*初始化样式*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,header,hgroup,nav,section,article,aside,footer,figure,figcaption,menu,button{margin:0; padding:0;}
+html{min-height:100%;}
+body{color:#333; min-height:100%; font-family:'Myriad Set Pro','Myriad Pro','Microsoft Yahei',SimSun,Arial; background:#faeed8; font-size:.6rem;}
+ul,li{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+img{border:0; width:100%;}
+em{font-style:normal;}
+table{border-collapse:collapse;}
+input{border:none;}
+input:focus{outline:none;}
+textarea{-webkit-appearance:none;}
+textarea:focus{outline:none;}
+a{text-decoration:none;}
+input[type="button"], input[type="submit"], input[type="reset"],select {-webkit-appearance: none;} 
+.leftF{float:left;}
+.rightF{float:right;}
+/***超出一行用...省略***/
+.ellipsis{
+	text-overflow:ellipsis; 
+	overflow:hidden; 
+	white-space:nowrap; 
+	-webkit-text-overflow:ellipsis	
+}
+/***超出两行用...省略***/
+.elli-two{
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*首页*/
+header{
+	height:13.11rem;
+}
+header img{
+	width:100%;
+	height:13.11rem;
+}
+.block{
+	position:relative;
+	}
+.block_title1{
+	height:2.2rem;
+	width:100%;
+	position:absolute;
+	color:#faeed8;
+	top:-2.2rem;
+	line-height:2.2rem;
+	font-size:.9rem;
+	text-align:center;
+	}
+	
+.block_title{
+	margin-bottom:0.8rem;
+	background:#4e341d;
+	line-height:2.2rem;
+	height:2.2rem;
+	text-align:center;
+	color:#faeed8;
+	font-size:.9rem;
+	}
+.block_title1 em img{
+	width:1.36rem;
+	vertical-align:top;
+	margin:0.42rem 0.3rem 0 0;
+}
+.block_title3 em img{
+	width:1.2rem;
+	vertical-align:top;
+	margin:0.42rem 0.3rem 0 0;
+}
+.block_title4 em img{
+	width:1.2rem;
+	vertical-align:top;
+	margin:0.42rem 0.3rem 0 0;
+}
+.block_title2 em img{
+	width:0.9rem;
+	vertical-align:top;
+	margin:0.44rem 0.3rem 0 0;
+}
+.list{
+	margin-top:0.8rem;
+	width:100%;
+	}
+.list li{
+	margin-bottom:0.8rem;
+	float:left;
+	width:25%;
+	text-align:center;
+	font-size:.6rem;
+	}
+.list li img{
+	width:70%;
+	border:solid 1px #fff;
+	border-radius:50rem;
+	}		
+a{color:#333}

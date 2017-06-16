@@ -1,0 +1,152 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lin
+ * Date: 17-2-8
+ * Time: 下午1:57
+ */
+
+namespace App\Repository;
+
+use App\Library\Card;
+
+use App\Repository\Repositories;
+
+/**
+ * Class CardRepository
+ * @package App\Repository
+ */
+class CardRepository
+{
+    /**
+     * @var \App\Repository\Repositories
+     */
+    protected $item;
+
+    /**
+     * @var \Medoo\medoo
+     */
+    protected $db;
+
+    public function __construct(Repositories $item)
+    {
+        $this->item = $item;
+        $this->db = $item->getMedooInstance();
+    }
+
+
+    /**
+     *  关联 查询是否是会员信息是否在本地
+     * @param $openid
+     * @return mixed
+     */
+    public function getUser($openid)
+    {
+        $customer = $this->db->query("SELECT m.mobile, m.idcard FROM `ims_mc_mapping_fans` as f 
+          LEFT JOIN `ims_mc_members` as m 
+          ON m.uid = f.uid WHERE f.openid = '".$openid."'");
+
+       return $data = $customer->fetch();
+    }
+
+    /**
+     *  根据ERP数据查询 会员信息
+     * @param $idNum
+     * @param $mobile
+     * @return mixed
+     */
+    public function getErp($idNum, $mobile)
+    {
+        $erpClient = new Card();
+        $erpData = [
+            'idNum' => empty($idNum)?'':$idNum,
+            'tel'   => empty($mobile)?'':$mobile
+        ];
+        //查询ERP会员信息主键
+        $customerId = $erpClient->getCustomerCustID($erpData);
+        //查询ERP会员信息
+        $erpInfo = $erpClient->getCustomerInfo($customerId);
+
+        //?
+        //$score = $erpClient->getCustomerScore($customerId);
+
+        return $erpInfo;
+    }
+
+    public function insertcreate($data)
+    {
+        return $this->db->insert("ims_mc_create_cards", $data);
+
+    }
+
+    public function searchcur()
+    {
+        $card_id = $this->db->select("ims_mc_create_cards","card_id", [
+            "cur_card_id" => 1
+        ]);
+        if(!empty($card_id)){
+            return $card_id[0];
+        }
+    }
+
+    /**
+     *  判断是否会员卡cardId
+     * @param $cardId
+     * @return mixed
+     */
+    public function judgeMemberCard($cardId){
+
+        $memberCard = $this->db->get('ims_mc_create_cards',
+            'card_id', ['card_id' => $cardId]);
+
+        return $memberCard;
+    }
+
+    /**
+     *  记录领卡
+     * @param $openid
+     * @param $code
+     * @param $cardId
+     * @param $outerId
+     * @return mixed
+     */
+    public function recordCard($openid,$code,$cardId,$outerId)
+    {
+        $data = [
+            'openid'      => $openid,
+            'code'        => $code,
+            'cardid'      => $cardId,
+            'outer'       => $outerId,
+            'create_time' => time()
+        ];
+
+        $membership = $this->db->insert('ims_membership_info', $data);
+
+        return $membership;
+    }
+
+    /**
+     *
+     */
+    public function oldMember(){
+
+    }
+
+
+    public static function auto(){
+
+        $score = empty($score)?0:$score;
+        $con = substr($erpInfo['cardId'], 0, 1);
+        $vip = ($con == '8') ? 'VVVIP' : 'VIP';
+        $bgpic_url=($vip=='VVVIP')?'http://mmbiz.qpic.cn/mmbiz_png/6Qs5bXJZ38LxrnPkdZvp4JMNjB238LeYHj8dd8qTDxH0ww1N6R2Rb9scTZWaVAEJD442Uc7FhHLelxoHyXaQZg/0?wx_fmt=jpeg':'http://mmbiz.qpic.cn/mmbiz_png/6Qs5bXJZ38LxrnPkdZvp4JMNjB238LeYeyWkia5PKGpxE9whSqeJtxqZTDyvq5rY4WXtuWdd1qOdChQxevibpMqw/0?wx_fmt=jpeg';
+
+        $activate = [
+            'init_bonus'              => $score,
+            'code'                    => (int)$code,
+            "membership_number"       =>$erpInfo['cardId'],
+            "background_pic_url"      =>$bgpic_url,
+            "init_custom_field_value1"=>$vip
+        ];
+        return $activate;
+    }
+}

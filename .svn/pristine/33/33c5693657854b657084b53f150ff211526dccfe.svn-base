@@ -1,0 +1,66 @@
+<?php
+
+
+session_start();
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+
+$settings = require_once __DIR__ . '/../config/settings.php';
+
+
+$app = new \Slim\App($settings);
+
+// 获取应用容器
+$container = $app->getContainer();
+
+/**
+ *  注入Twig 模板至容器中
+ * @param $container
+ * @return \Slim\Views\Twig
+ */
+$container['view'] = function($container){
+    $view = new \Slim\Views\Twig( __DIR__ . '/../resource/views', [
+        'cache' => false
+    ]);
+
+    $view->addExtension(new \Slim\Views\TwigExtension(
+        $container->router,
+        $container->request->getUri()
+    ));
+
+    return $view;
+};
+
+/**
+ * @return \App\Controllers\IndexController
+ */
+$container['IndexController'] = function($container){
+    return new \App\Controllers\IndexController(new \App\Repository\Repositories(),
+        new App\Controllers\Controller($container));
+};
+
+$container['WeCardController'] = function() {
+    return new \App\Controllers\WeCardController(new \App\Repository\CardRepository(
+        new \App\Repository\Repositories()),new \App\Repository\WechatRepository(
+        new \App\Repository\Repositories()));
+};
+
+/**
+ * @param $container
+ * @return \App\Controllers\HomeController
+ */
+$container['HomeController'] = function($container){
+    return new \App\Controllers\HomeController($container);
+};
+
+
+$container['WeChatController'] = function(){
+    return new \App\Controllers\WeChatController(new \App\Repository\Repositories());
+};
+
+
+
+
+require_once __DIR__ . '/../app/routes.php';
+

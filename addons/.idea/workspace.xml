@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="599b0081-bcbc-4f40-8e93-1aa22318a93f" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eloquence/site.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="229" column="28" lean-forward="false" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
+              <folding>
+                <marker date="1493982925124" expanded="true" signature="9016:9089" ph="SELECT uid F... ${tablename('mc_members')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/member/site.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49538">
+              <caret line="2914" column="5" lean-forward="false" selection-start-line="2914" selection-start-column="5" selection-end-line="2914" selection-end-column="5" />
+              <folding>
+                <marker date="1494321856003" expanded="true" signature="590:635" ph="select * fro... ims_contract_record" />
+                <marker date="1494321856003" expanded="true" signature="1214:1280" ph="select fanid... ims_mc_mapping_fans" />
+                <marker date="1494321856003" expanded="true" signature="1837:1933" ph="SELECT `uid`... ims_mc_members" />
+                <marker date="1494321856003" expanded="true" signature="1974:2024" ph="SELECT `scor... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="2908:2963" ph="SELECT `card... ims_mc_card_members" />
+                <marker date="1494321856003" expanded="true" signature="3040:3215" ph="INSERT INTO `ims_mc_card_members`... " />
+                <marker date="1494321856003" expanded="true" signature="3310:3390" ph="UPDATE `ims_... " />
+                <marker date="1494321856003" expanded="true" signature="3535:3590" ph="SELECT `scor... ims_mc_members_score" />
+                <marker date="1494321856003" expanded="true" signature="3664:3875" ph="INSERT INTO `ims_mc_members_score`... " />
+                <marker date="1494321856003" expanded="true" signature="5156:5365" ph="SELECT `plat... ims_park_logs" />
+                <marker date="1494321856003" expanded="true" signature="6306:6503" ph="SELECT `plat... ims_park_logs" />
+                <marker date="1494321856003" expanded="true" signature="8512:8567" ph="select custi... ims_mc_card_members" />
+                <marker date="1494321856003" expanded="true" signature="10954:11059" ph="update ims_m... " />
+                <marker date="1494321856003" expanded="true" signature="11164:11239" ph="update ims_m... " />
+                <marker date="1494321856003" expanded="true" signature="11470:11545" ph="update ims_m... " />
+                <marker date="1494321856003" expanded="true" signature="11629:11689" ph="SELECT `cont... ims_contract_record" />
+                <marker date="1494321856003" expanded="true" signature="12017:12079" ph="select count... ims_park_platenumber_log" />
+                <marker date="1494321856003" expanded="true" signature="12376:12429" ph="select count... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="14631:14797" ph="SELECT m.rea... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="16036:16086" ph="select score... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="19011:19113" ph="select * fro... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="19411:19521" ph="SELECT id,ti... ${tablename('activity_exchange')}" />
+                <marker date="1494321856003" expanded="true" signature="19633:19710" ph="SELECT fanid... ${tablename('mc_mapping_fans')}" />
+                <marker date="1494321856003" expanded="true" signature="23186:23251" ph="SELECT score... ${tablename('park_member')}" />
+                <marker date="1494321856003" expanded="true" signature="23847:23932" ph="INSERT INTO ${tablename('mc_testSeverId')}... " />
+                <marker date="1494321856003" expanded="true" signature="25815:25900" ph="SELECT code,... ${tablename('membership_info')}" />
+                <marker date="1494321856003" expanded="true" signature="26823:26882" ph="select id fr... ims_membership_info" />
+                <marker date="1494321856003" expanded="true" signature="27401:27462" ph="SELECT card_... ims_mc_create_cards" />
+                <marker date="1494321856003" expanded="true" signature="27676:27756" ph="SELECT creat... ims_membership_info" />
+                <marker date="1494321856003" expanded="true" signature="29202:29252" ph="select score... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="29355:29417" ph="select custi... ims_mc_card_members" />
+                <marker date="1494321856003" expanded="true" signature="30097:30165" ph="select plate... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="30554:30622" ph="select plate... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="32506:32639" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+                <marker date="1494321856003" expanded="true" signature="33125:33283" ph="SELECT `plat... ims_park_leave" />
+                <marker date="1494321856003" expanded="true" signature="35331:35397" ph="select mobil... ims_mc_members" />
+                <marker date="1494321856003" expanded="true" signature="36861:36919" ph="select zone,... " />
+                <marker date="1494321856003" expanded="true" signature="39624:39702" ph="SELECT * FRO... ims_park_floor10_test" />
+                <marker date="1494321856003" expanded="true" signature="40314:40520" ph="select Charg... Tc_Business" />
+                <marker date="1494321856003" expanded="true" signature="43408:43516" ph="UPDATE `ims_... " />
+                <marker date="1494321856003" expanded="true" signature="44458:44512" ph="UPDATE `ims_... " />
+                <marker date="1494321856003" expanded="true" signature="44662:44709" ph="select id fr... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="45351:45454" ph="UPDATE `ims_... " />
+                <marker date="1494321856003" expanded="true" signature="55077:55180" ph="select plate... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="56095:56280" ph="select `plat... ims_mc_members" />
+                <marker date="1494321856003" expanded="true" signature="56664:56726" ph="select count... ims_park_platenumber_log" />
+                <marker date="1494321856003" expanded="true" signature="57026:57079" ph="select count... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="57787:57861" ph="UPDATE `ims_... " />
+                <marker date="1494321856003" expanded="true" signature="60302:60389" ph="select plate... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="60877:61062" ph="select `plat... ims_mc_members" />
+                <marker date="1494321856003" expanded="true" signature="61446:61508" ph="select count... ims_park_platenumber_log" />
+                <marker date="1494321856003" expanded="true" signature="61808:61861" ph="select count... ims_park_member" />
+                <marker date="1494321856003" expanded="true" signature="62569:62643" ph="UPDATE `ims_... " />
+                <marker date="1494321856003" expanded="true" signature="62836:62920" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+                <marker date="1494321856003" expanded="true" signature="65377:65461" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+                <marker date="1494321856003" expanded="true" signature="66554:66638" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+                <marker date="1494321856003" expanded="true" signature="69155:69293" ph="update ims_m... " />
+                <marker date="1494321856003" expanded="true" signature="69362:69475" ph="update ims_m... " />
+                <marker date="1494321856003" expanded="true" signature="69544:69627" ph="update ims_m... " />
+                <marker date="1494321856003" expanded="true" signature="70499:70602" ph="select plate... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="76840:76919" ph="SELECT `zone... ims_park_are" />
+                <marker date="1494321856003" expanded="true" signature="78382:78440" ph="SELECT * FRO... ims_park_are" />
+                <marker date="1494321856003" expanded="true" signature="78620:78679" ph="select * fro... ims_park_are" />
+                <marker date="1494321856003" expanded="true" signature="78833:78891" ph="SELECT * FRO... ims_park_are" />
+                <marker date="1494321856003" expanded="true" signature="79620:79793" ph="SELECT * FRO... ims_parkinfo_status" />
+                <marker date="1494321856003" expanded="true" signature="81125:81187" ph="select * fro... ims_park_are" />
+                <marker date="1494321856003" expanded="true" signature="81534:81664" ph="select entry... ${tablename('park_entry')}" />
+                <marker date="1494321856003" expanded="true" signature="82039:82133" ph="select plate... ${tablename('mc_members')}" />
+                <marker date="1494321856003" expanded="true" signature="82479:82542" ph="SELECT `acce... ims_account_wechats" />
+                <marker date="1494321856003" expanded="true" signature="88541:88601" ph="SELECT * FRO... ${tablename($tableName)}" />
+                <marker date="1494321856003" expanded="true" signature="89587:89655" ph="SELECT * FRO... ${tablename($tableName)}" />
+                <marker date="1494321856003" expanded="true" signature="90625:90693" ph="SELECT * FRO... ${tablename($tableName)}" />
+                <marker date="1494321856003" expanded="true" signature="92284:92388" ph="SELECT * FRO... ${tablename($tableName)}" />
+                <marker date="1494321856003" expanded="true" signature="93831:93966" ph="select aid,c... ${tablename($voteTableName)}" />
+                <marker date="1494321856003" expanded="true" signature="94168:94250" ph="select * fro... ${tablename($tableName)}" />
+                <marker date="1494321856003" expanded="true" signature="95219:95308" ph="select * fro... ${tablename($tableName)}" />
+                <marker date="1494321856003" expanded="true" signature="95979:96049" ph="select count... card_error_log" />
+                <marker date="1494321856003" expanded="true" signature="96664:96789" ph="select count... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="96965:97077" ph="select passw... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="99223:99350" ph="select count... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="99522:99642" ph="select count... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="99813:99933" ph="select passw... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="100101:100187" ph="select passw... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="100534:100811" ph="update card_... " />
+                <marker date="1494321856003" expanded="true" signature="101267:101375" ph="select passw... card_card_card" />
+                <marker date="1494321856003" expanded="true" signature="103356:103413" ph="select * fro... card_dept_name" />
+                <marker date="1494321856003" expanded="true" signature="107904:108022" ph="select * fro... card_dept_name" />
+                <marker date="1494321856003" expanded="true" signature="108490:108553" ph="select * fro... card_dept_name" />
+                <marker date="1494321856003" expanded="true" signature="108605:108716" ph="select * fro... ims_shop_emp" />
+                <marker date="1494321856003" expanded="true" signature="110515:110648" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+                <marker date="1494321856003" expanded="true" signature="110884:111042" ph="SELECT `plat... ims_park_leave" />
+                <marker date="1494321856003" expanded="true" signature="113880:113945" ph="SELECT `mobi... ims_mc_members" />
+                <marker date="1494321856003" expanded="true" signature="113996:114100" ph="SELECT `mobi... ims_mc_members" />
+                <marker date="1494321856003" expanded="true" signature="116911:116961" ph="SELECT COUNT... " />
+                <marker date="1494321856003" expanded="true" signature="117294:117433" ph="SELECT COUNT... " />
+                <marker date="1494321856003" expanded="true" signature="117904:117996" ph="SELECT `real... ims_ffan_credit_info" />
+                <marker date="1494321856003" expanded="true" signature="120625:120848" ph="SELECT *,con... Tc_UserCrdtm_In" />
+                <marker date="1494321856003" expanded="true" signature="121863:121970" ph="SELECT *,con... Tc_UserCrdtm_In" />
+                <marker date="1494321856003" expanded="true" signature="122682:122870" ph="SELECT `park... ims_parkinfo_status" />
+                <marker date="1494321856003" expanded="true" signature="123392:123559" ph="SELECT COUNT... Tc_UserCrdtm_In" />
+                <marker date="1494321856003" expanded="true" signature="124239:124298" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="124393:124413" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="124482:124521" ph="SELECT sys_o... ims_act_trainsys" />
+                <marker date="1494321856003" expanded="true" signature="125454:125513" ph="SELECT openI... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="125870:125944" ph="SELECT lastT... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="126649:126710" ph="SELECT from_... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="127353:127414" ph="SELECT from_... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="128001:128068" ph="SELECT from_... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="128674:128744" ph="SELECT from_... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="139070:139128" ph="SELECT times... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="139598:139661" ph="SELECT is_re... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="139839:139911" ph="SELECT amoun... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="140328:140404" ph="SELECT cardI... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="141081:141145" ph="SELECT card_... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="144180:144238" ph="SELECT times... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="147041:147106" ph="SELECT times... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="147696:147755" ph="SELECT statu... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="147840:147898" ph="SELECT times... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="148995:149120" ph="SELECT cardI... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="149503:149568" ph="SELECT times... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="150060:150121" ph="SELECT s_num... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="150474:150534" ph="SELECT btn_q... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="151223:151285" ph="SELECT btn_e... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="151988:152052" ph="SELECT btn_p... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="153120:153187" ph="SELECT share... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="153906:153970" ph="SELECT share... ims_act_times" />
+                <marker date="1494321856003" expanded="true" signature="155142:155305" ph="SELECT count... ims_act_lookcardlog" />
+                <marker date="1494321856003" expanded="true" signature="156099:156261" ph="SELECT count... ims_act_getcardlog" />
+                <marker date="1494321856003" expanded="true" signature="156623:156748" ph="SELECT cardI... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="157355:157548" ph="SELECT count... ims_act_lookcardlog" />
+                <marker date="1494321856003" expanded="true" signature="158189:158314" ph="SELECT cardI... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="158921:159113" ph="SELECT count... ims_act_getcardlog" />
+                <marker date="1494321856003" expanded="true" signature="159753:159878" ph="SELECT cardI... ims_act_cardlist" />
+                <marker date="1494321856003" expanded="true" signature="160352:160526" ph="SELECT count... ims_act_getcardlog" />
+                <marker date="1494321856003" expanded="true" signature="161272:161333" ph="SELECT openI... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="162534:162554" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="162621:162657" ph="SELECT sys_o... ims_light_sys" />
+                <marker date="1494321856003" expanded="true" signature="163213:163274" ph="SELECT openI... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="163342:163398" ph="SELECT * FRO... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="163737:163800" ph="SELECT from_... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="164333:164397" ph="SELECT from_... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="165233:165289" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="165568:165622" ph="select ltid ims_light_answerlist" />
+                <marker date="1494321856003" expanded="true" signature="166373:166393" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="166552:166617" ph="select openI... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="166978:167038" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="167647:167712" ph="select openI... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="168010:168074" ph="select openI... ims_light_luckuser" />
+                <marker date="1494321856003" expanded="true" signature="169214:169279" ph="select openI... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="169792:169851" ph="select * fro... ims_light_luckuser" />
+                <marker date="1494321856003" expanded="true" signature="170580:170600" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="170685:170721" ph="SELECT sys_o... ims_light_sys" />
+                <marker date="1494321856003" expanded="true" signature="170852:170912" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="171372:171423" ph="select * fro... ims_light_answerlist" />
+                <marker date="1494321856003" expanded="true" signature="172209:172255" ph="select * fro... ims_light_answerlist" />
+                <marker date="1494321856003" expanded="true" signature="173156:173212" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="174773:174829" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="176657:176713" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="177974:178020" ph="select * fro... ims_light_answerlist" />
+                <marker date="1494321856003" expanded="true" signature="178534:178590" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="180399:180455" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="181887:181943" ph="select * fro... ims_light_users" />
+                <marker date="1494321856003" expanded="true" signature="182907:182953" ph="select * fro... ims_light_answerlist" />
+                <marker date="1494321856003" expanded="true" signature="183044:183115" ph="select lopti... ims_light_answeroption" />
+                <marker date="1494321856003" expanded="true" signature="183972:184091" ph="SELECT `crea... ims_park_entry" />
+                <marker date="1494321856003" expanded="true" signature="184161:184339" ph="SELECT `plat... ims_park_leave" />
+                <marker date="1494321856003" expanded="true" signature="184466:184588" ph="select idcar... ims_mc_mapping_fans" />
+                <marker date="1494321856003" expanded="true" signature="186861:186959" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+                <marker date="1494321856003" expanded="true" signature="188038:188097" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="188198:188218" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="188299:188342" ph="SELECT women... ims_mc_womenswitch" />
+                <marker date="1494321856003" expanded="true" signature="188833:188889" ph="SELECT * FRO... ims_mc_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="188926:188982" ph="SELECT * FRO... ims_mc_womencard" />
+                <marker date="1494321856003" expanded="true" signature="190494:190660" ph="SELECT name,... ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="191876:191943" ph="SELECT * FRO... ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="191981:192037" ph="SELECT * FRO... ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="192077:192132" ph="SELECT * FRO... ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="196192:196254" ph="select * fro... ims_work_share" />
+                <marker date="1494321856003" expanded="true" signature="197158:197220" ph="select * fro... ims_work_share" />
+                <marker date="1494321856003" expanded="true" signature="198179:198249" ph="SELECT * FRO... ims_core_cache" />
+                <marker date="1494321856003" expanded="true" signature="208461:208520" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="208621:208641" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="208722:208761" ph="SELECT work_... ims_work_switch" />
+                <marker date="1494321856003" expanded="true" signature="209280:209347" ph="SELECT uid,f... ims_mc_mapping_fans" />
+                <marker date="1494321856003" expanded="true" signature="209384:209442" ph="SELECT * FRO... ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="209479:209532" ph="SELECT * FRO... ims_work_card" />
+                <marker date="1494321856003" expanded="true" signature="211738:211797" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="211895:211915" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="212066:212133" ph="select uid,f... ims_mc_mapping_fans" />
+                <marker date="1494321856003" expanded="true" signature="212540:212610" ph="select name,... ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="216294:216356" ph="select name ims_work_ownerinfo" />
+                <marker date="1494321856003" expanded="true" signature="218081:218140" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="218241:218261" ph="..." />
+                <marker date="1494321856003" expanded="true" signature="219289:219373" ph="select name,... ims_work_ownerinfo" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sapi</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/member/site.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="member" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eloquence" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../park2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="599b0081-bcbc-4f40-8e93-1aa22318a93f" name="Default" comment="" />
+      <created>1494320326380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1494320326380</updated>
+      <workItem from="1494320327645" duration="4378000" />
+      <workItem from="1494379461359" duration="626000" />
+      <workItem from="1494398413275" duration="2164000" />
+      <workItem from="1494407801615" duration="631000" />
+      <workItem from="1494554737470" duration="1261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9060000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2367223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/eloquence/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1493982925124" expanded="true" signature="9016:9089" ph="SELECT uid F... ${tablename('mc_members')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49538">
+          <caret line="2914" column="5" lean-forward="false" selection-start-line="2914" selection-start-column="5" selection-end-line="2914" selection-end-column="5" />
+          <folding>
+            <marker date="1494321856003" expanded="true" signature="590:635" ph="select * fro... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="1214:1280" ph="select fanid... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="1837:1933" ph="SELECT `uid`... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="1974:2024" ph="SELECT `scor... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="2908:2963" ph="SELECT `card... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="3040:3215" ph="INSERT INTO `ims_mc_card_members`... " />
+            <marker date="1494321856003" expanded="true" signature="3310:3390" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="3535:3590" ph="SELECT `scor... ims_mc_members_score" />
+            <marker date="1494321856003" expanded="true" signature="3664:3875" ph="INSERT INTO `ims_mc_members_score`... " />
+            <marker date="1494321856003" expanded="true" signature="5156:5365" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="6306:6503" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="8512:8567" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="10954:11059" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11164:11239" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11470:11545" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11629:11689" ph="SELECT `cont... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="12017:12079" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="12376:12429" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="14631:14797" ph="SELECT m.rea... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="16036:16086" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="19011:19113" ph="select * fro... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="19411:19521" ph="SELECT id,ti... ${tablename('activity_exchange')}" />
+            <marker date="1494321856003" expanded="true" signature="19633:19710" ph="SELECT fanid... ${tablename('mc_mapping_fans')}" />
+            <marker date="1494321856003" expanded="true" signature="23186:23251" ph="SELECT score... ${tablename('park_member')}" />
+            <marker date="1494321856003" expanded="true" signature="23847:23932" ph="INSERT INTO ${tablename('mc_testSeverId')}... " />
+            <marker date="1494321856003" expanded="true" signature="25815:25900" ph="SELECT code,... ${tablename('membership_info')}" />
+            <marker date="1494321856003" expanded="true" signature="26823:26882" ph="select id fr... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="27401:27462" ph="SELECT card_... ims_mc_create_cards" />
+            <marker date="1494321856003" expanded="true" signature="27676:27756" ph="SELECT creat... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="29202:29252" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="29355:29417" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="30097:30165" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="30554:30622" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="32506:32639" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="33125:33283" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="35331:35397" ph="select mobil... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="36861:36919" ph="select zone,... " />
+            <marker date="1494321856003" expanded="true" signature="39624:39702" ph="SELECT * FRO... ims_park_floor10_test" />
+            <marker date="1494321856003" expanded="true" signature="40314:40520" ph="select Charg... Tc_Business" />
+            <marker date="1494321856003" expanded="true" signature="43408:43516" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44458:44512" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44662:44709" ph="select id fr... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="45351:45454" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="55077:55180" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="56095:56280" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="56664:56726" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="57026:57079" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="57787:57861" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="60302:60389" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="60877:61062" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="61446:61508" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="61808:61861" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="62569:62643" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="62836:62920" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="65377:65461" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="66554:66638" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="69155:69293" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69362:69475" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69544:69627" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="70499:70602" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="76840:76919" ph="SELECT `zone... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78382:78440" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78620:78679" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78833:78891" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="79620:79793" ph="SELECT * FRO... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="81125:81187" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="81534:81664" ph="select entry... ${tablename('park_entry')}" />
+            <marker date="1494321856003" expanded="true" signature="82039:82133" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="82479:82542" ph="SELECT `acce... ims_account_wechats" />
+            <marker date="1494321856003" expanded="true" signature="88541:88601" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="89587:89655" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="90625:90693" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="92284:92388" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="93831:93966" ph="select aid,c... ${tablename($voteTableName)}" />
+            <marker date="1494321856003" expanded="true" signature="94168:94250" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95219:95308" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95979:96049" ph="select count... card_error_log" />
+            <marker date="1494321856003" expanded="true" signature="96664:96789" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="96965:97077" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99223:99350" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99522:99642" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99813:99933" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100101:100187" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100534:100811" ph="update card_... " />
+            <marker date="1494321856003" expanded="true" signature="101267:101375" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="103356:103413" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="107904:108022" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108490:108553" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108605:108716" ph="select * fro... ims_shop_emp" />
+            <marker date="1494321856003" expanded="true" signature="110515:110648" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="110884:111042" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="113880:113945" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="113996:114100" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="116911:116961" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117294:117433" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117904:117996" ph="SELECT `real... ims_ffan_credit_info" />
+            <marker date="1494321856003" expanded="true" signature="120625:120848" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="121863:121970" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="122682:122870" ph="SELECT `park... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="123392:123559" ph="SELECT COUNT... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="124239:124298" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124393:124413" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124482:124521" ph="SELECT sys_o... ims_act_trainsys" />
+            <marker date="1494321856003" expanded="true" signature="125454:125513" ph="SELECT openI... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="125870:125944" ph="SELECT lastT... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="126649:126710" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="127353:127414" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128001:128068" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128674:128744" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139070:139128" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139598:139661" ph="SELECT is_re... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139839:139911" ph="SELECT amoun... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="140328:140404" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="141081:141145" ph="SELECT card_... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="144180:144238" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147041:147106" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147696:147755" ph="SELECT statu... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147840:147898" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="148995:149120" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="149503:149568" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="150060:150121" ph="SELECT s_num... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="150474:150534" ph="SELECT btn_q... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151223:151285" ph="SELECT btn_e... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151988:152052" ph="SELECT btn_p... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153120:153187" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153906:153970" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="155142:155305" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156099:156261" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156623:156748" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="157355:157548" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="158189:158314" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="158921:159113" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="159753:159878" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="160352:160526" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="161272:161333" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="162534:162554" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="162621:162657" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="163213:163274" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163342:163398" ph="SELECT * FRO... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163737:163800" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="164333:164397" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165233:165289" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165568:165622" ph="select ltid ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="166373:166393" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="166552:166617" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="166978:167038" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="167647:167712" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="168010:168074" ph="select openI... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="169214:169279" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="169792:169851" ph="select * fro... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="170580:170600" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="170685:170721" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="170852:170912" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="171372:171423" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="172209:172255" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="173156:173212" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="174773:174829" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="176657:176713" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="177974:178020" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="178534:178590" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="180399:180455" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="181887:181943" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="182907:182953" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="183044:183115" ph="select lopti... ims_light_answeroption" />
+            <marker date="1494321856003" expanded="true" signature="183972:184091" ph="SELECT `crea... ims_park_entry" />
+            <marker date="1494321856003" expanded="true" signature="184161:184339" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="184466:184588" ph="select idcar... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="186861:186959" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="188038:188097" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188198:188218" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188299:188342" ph="SELECT women... ims_mc_womenswitch" />
+            <marker date="1494321856003" expanded="true" signature="188833:188889" ph="SELECT * FRO... ims_mc_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="188926:188982" ph="SELECT * FRO... ims_mc_womencard" />
+            <marker date="1494321856003" expanded="true" signature="190494:190660" ph="SELECT name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191876:191943" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191981:192037" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="192077:192132" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="196192:196254" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="197158:197220" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="198179:198249" ph="SELECT * FRO... ims_core_cache" />
+            <marker date="1494321856003" expanded="true" signature="208461:208520" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208621:208641" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208722:208761" ph="SELECT work_... ims_work_switch" />
+            <marker date="1494321856003" expanded="true" signature="209280:209347" ph="SELECT uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="209384:209442" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="209479:209532" ph="SELECT * FRO... ims_work_card" />
+            <marker date="1494321856003" expanded="true" signature="211738:211797" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="211895:211915" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="212066:212133" ph="select uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="212540:212610" ph="select name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="216294:216356" ph="select name ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="218081:218140" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="218241:218261" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="219289:219373" ph="select name,... ims_work_ownerinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eloquence/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1493982925124" expanded="true" signature="9016:9089" ph="SELECT uid F... ${tablename('mc_members')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49538">
+          <caret line="2914" column="5" lean-forward="true" selection-start-line="2914" selection-start-column="5" selection-end-line="2914" selection-end-column="5" />
+          <folding>
+            <marker date="1494321856003" expanded="true" signature="590:635" ph="select * fro... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="1214:1280" ph="select fanid... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="1837:1933" ph="SELECT `uid`... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="1974:2024" ph="SELECT `scor... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="2908:2963" ph="SELECT `card... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="3040:3215" ph="INSERT INTO `ims_mc_card_members`... " />
+            <marker date="1494321856003" expanded="true" signature="3310:3390" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="3535:3590" ph="SELECT `scor... ims_mc_members_score" />
+            <marker date="1494321856003" expanded="true" signature="3664:3875" ph="INSERT INTO `ims_mc_members_score`... " />
+            <marker date="1494321856003" expanded="true" signature="5156:5365" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="6306:6503" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="8512:8567" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="10954:11059" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11164:11239" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11470:11545" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11629:11689" ph="SELECT `cont... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="12017:12079" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="12376:12429" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="14631:14797" ph="SELECT m.rea... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="16036:16086" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="19011:19113" ph="select * fro... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="19411:19521" ph="SELECT id,ti... ${tablename('activity_exchange')}" />
+            <marker date="1494321856003" expanded="true" signature="19633:19710" ph="SELECT fanid... ${tablename('mc_mapping_fans')}" />
+            <marker date="1494321856003" expanded="true" signature="23186:23251" ph="SELECT score... ${tablename('park_member')}" />
+            <marker date="1494321856003" expanded="true" signature="23847:23932" ph="INSERT INTO ${tablename('mc_testSeverId')}... " />
+            <marker date="1494321856003" expanded="true" signature="25815:25900" ph="SELECT code,... ${tablename('membership_info')}" />
+            <marker date="1494321856003" expanded="true" signature="26823:26882" ph="select id fr... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="27401:27462" ph="SELECT card_... ims_mc_create_cards" />
+            <marker date="1494321856003" expanded="true" signature="27676:27756" ph="SELECT creat... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="29202:29252" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="29355:29417" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="30097:30165" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="30554:30622" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="32506:32639" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="33125:33283" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="35331:35397" ph="select mobil... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="36861:36919" ph="select zone,... " />
+            <marker date="1494321856003" expanded="true" signature="39624:39702" ph="SELECT * FRO... ims_park_floor10_test" />
+            <marker date="1494321856003" expanded="true" signature="40314:40520" ph="select Charg... Tc_Business" />
+            <marker date="1494321856003" expanded="true" signature="43408:43516" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44458:44512" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44662:44709" ph="select id fr... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="45351:45454" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="55077:55180" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="56095:56280" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="56664:56726" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="57026:57079" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="57787:57861" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="60302:60389" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="60877:61062" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="61446:61508" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="61808:61861" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="62569:62643" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="62836:62920" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="65377:65461" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="66554:66638" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="69155:69293" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69362:69475" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69544:69627" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="70499:70602" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="76840:76919" ph="SELECT `zone... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78382:78440" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78620:78679" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78833:78891" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="79620:79793" ph="SELECT * FRO... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="81125:81187" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="81534:81664" ph="select entry... ${tablename('park_entry')}" />
+            <marker date="1494321856003" expanded="true" signature="82039:82133" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="82479:82542" ph="SELECT `acce... ims_account_wechats" />
+            <marker date="1494321856003" expanded="true" signature="88541:88601" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="89587:89655" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="90625:90693" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="92284:92388" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="93831:93966" ph="select aid,c... ${tablename($voteTableName)}" />
+            <marker date="1494321856003" expanded="true" signature="94168:94250" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95219:95308" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95979:96049" ph="select count... card_error_log" />
+            <marker date="1494321856003" expanded="true" signature="96664:96789" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="96965:97077" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99223:99350" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99522:99642" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99813:99933" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100101:100187" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100534:100811" ph="update card_... " />
+            <marker date="1494321856003" expanded="true" signature="101267:101375" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="103356:103413" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="107904:108022" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108490:108553" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108605:108716" ph="select * fro... ims_shop_emp" />
+            <marker date="1494321856003" expanded="true" signature="110515:110648" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="110884:111042" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="113880:113945" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="113996:114100" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="116911:116961" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117294:117433" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117904:117996" ph="SELECT `real... ims_ffan_credit_info" />
+            <marker date="1494321856003" expanded="true" signature="120625:120848" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="121863:121970" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="122682:122870" ph="SELECT `park... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="123392:123559" ph="SELECT COUNT... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="124239:124298" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124393:124413" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124482:124521" ph="SELECT sys_o... ims_act_trainsys" />
+            <marker date="1494321856003" expanded="true" signature="125454:125513" ph="SELECT openI... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="125870:125944" ph="SELECT lastT... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="126649:126710" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="127353:127414" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128001:128068" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128674:128744" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139070:139128" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139598:139661" ph="SELECT is_re... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139839:139911" ph="SELECT amoun... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="140328:140404" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="141081:141145" ph="SELECT card_... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="144180:144238" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147041:147106" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147696:147755" ph="SELECT statu... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147840:147898" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="148995:149120" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="149503:149568" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="150060:150121" ph="SELECT s_num... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="150474:150534" ph="SELECT btn_q... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151223:151285" ph="SELECT btn_e... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151988:152052" ph="SELECT btn_p... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153120:153187" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153906:153970" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="155142:155305" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156099:156261" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156623:156748" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="157355:157548" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="158189:158314" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="158921:159113" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="159753:159878" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="160352:160526" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="161272:161333" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="162534:162554" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="162621:162657" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="163213:163274" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163342:163398" ph="SELECT * FRO... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163737:163800" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="164333:164397" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165233:165289" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165568:165622" ph="select ltid ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="166373:166393" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="166552:166617" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="166978:167038" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="167647:167712" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="168010:168074" ph="select openI... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="169214:169279" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="169792:169851" ph="select * fro... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="170580:170600" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="170685:170721" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="170852:170912" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="171372:171423" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="172209:172255" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="173156:173212" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="174773:174829" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="176657:176713" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="177974:178020" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="178534:178590" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="180399:180455" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="181887:181943" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="182907:182953" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="183044:183115" ph="select lopti... ims_light_answeroption" />
+            <marker date="1494321856003" expanded="true" signature="183972:184091" ph="SELECT `crea... ims_park_entry" />
+            <marker date="1494321856003" expanded="true" signature="184161:184339" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="184466:184588" ph="select idcar... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="186861:186959" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="188038:188097" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188198:188218" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188299:188342" ph="SELECT women... ims_mc_womenswitch" />
+            <marker date="1494321856003" expanded="true" signature="188833:188889" ph="SELECT * FRO... ims_mc_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="188926:188982" ph="SELECT * FRO... ims_mc_womencard" />
+            <marker date="1494321856003" expanded="true" signature="190494:190660" ph="SELECT name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191876:191943" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191981:192037" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="192077:192132" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="196192:196254" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="197158:197220" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="198179:198249" ph="SELECT * FRO... ims_core_cache" />
+            <marker date="1494321856003" expanded="true" signature="208461:208520" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208621:208641" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208722:208761" ph="SELECT work_... ims_work_switch" />
+            <marker date="1494321856003" expanded="true" signature="209280:209347" ph="SELECT uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="209384:209442" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="209479:209532" ph="SELECT * FRO... ims_work_card" />
+            <marker date="1494321856003" expanded="true" signature="211738:211797" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="211895:211915" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="212066:212133" ph="select uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="212540:212610" ph="select name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="216294:216356" ph="select name ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="218081:218140" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="218241:218261" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="219289:219373" ph="select name,... ims_work_ownerinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eloquence/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="123" column="27" lean-forward="false" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+          <folding>
+            <marker date="1493982925124" expanded="true" signature="9016:9089" ph="SELECT uid F... ${tablename('mc_members')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50388">
+          <caret line="2964" column="47" lean-forward="false" selection-start-line="2964" selection-start-column="47" selection-end-line="2964" selection-end-column="47" />
+          <folding>
+            <marker date="1494321856003" expanded="true" signature="590:635" ph="select * fro... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="1214:1280" ph="select fanid... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="1837:1933" ph="SELECT `uid`... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="1974:2024" ph="SELECT `scor... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="2908:2963" ph="SELECT `card... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="3040:3215" ph="INSERT INTO `ims_mc_card_members`... " />
+            <marker date="1494321856003" expanded="true" signature="3310:3390" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="3535:3590" ph="SELECT `scor... ims_mc_members_score" />
+            <marker date="1494321856003" expanded="true" signature="3664:3875" ph="INSERT INTO `ims_mc_members_score`... " />
+            <marker date="1494321856003" expanded="true" signature="5156:5365" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="6306:6503" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="8512:8567" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="10954:11059" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11164:11239" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11470:11545" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11629:11689" ph="SELECT `cont... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="12017:12079" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="12376:12429" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="14631:14797" ph="SELECT m.rea... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="16036:16086" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="19011:19113" ph="select * fro... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="19411:19521" ph="SELECT id,ti... ${tablename('activity_exchange')}" />
+            <marker date="1494321856003" expanded="true" signature="19633:19710" ph="SELECT fanid... ${tablename('mc_mapping_fans')}" />
+            <marker date="1494321856003" expanded="true" signature="23186:23251" ph="SELECT score... ${tablename('park_member')}" />
+            <marker date="1494321856003" expanded="true" signature="23847:23932" ph="INSERT INTO ${tablename('mc_testSeverId')}... " />
+            <marker date="1494321856003" expanded="true" signature="25815:25900" ph="SELECT code,... ${tablename('membership_info')}" />
+            <marker date="1494321856003" expanded="true" signature="26823:26882" ph="select id fr... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="27401:27462" ph="SELECT card_... ims_mc_create_cards" />
+            <marker date="1494321856003" expanded="true" signature="27676:27756" ph="SELECT creat... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="29202:29252" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="29355:29417" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="30097:30165" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="30554:30622" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="32506:32639" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="33125:33283" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="35331:35397" ph="select mobil... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="36861:36919" ph="select zone,... " />
+            <marker date="1494321856003" expanded="true" signature="39624:39702" ph="SELECT * FRO... ims_park_floor10_test" />
+            <marker date="1494321856003" expanded="true" signature="40314:40520" ph="select Charg... Tc_Business" />
+            <marker date="1494321856003" expanded="true" signature="43408:43516" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44458:44512" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44662:44709" ph="select id fr... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="45351:45454" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="55077:55180" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="56095:56280" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="56664:56726" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="57026:57079" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="57787:57861" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="60302:60389" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="60877:61062" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="61446:61508" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="61808:61861" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="62569:62643" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="62836:62920" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="65377:65461" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="66554:66638" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="69155:69293" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69362:69475" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69544:69627" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="70499:70602" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="76840:76919" ph="SELECT `zone... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78382:78440" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78620:78679" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78833:78891" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="79620:79793" ph="SELECT * FRO... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="81125:81187" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="81534:81664" ph="select entry... ${tablename('park_entry')}" />
+            <marker date="1494321856003" expanded="true" signature="82039:82133" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="82479:82542" ph="SELECT `acce... ims_account_wechats" />
+            <marker date="1494321856003" expanded="true" signature="88541:88601" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="89587:89655" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="90625:90693" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="92284:92388" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="93831:93966" ph="select aid,c... ${tablename($voteTableName)}" />
+            <marker date="1494321856003" expanded="true" signature="94168:94250" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95219:95308" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95979:96049" ph="select count... card_error_log" />
+            <marker date="1494321856003" expanded="true" signature="96664:96789" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="96965:97077" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99223:99350" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99522:99642" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99813:99933" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100101:100187" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100534:100811" ph="update card_... " />
+            <marker date="1494321856003" expanded="true" signature="101267:101375" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="103356:103413" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="107904:108022" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108490:108553" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108605:108716" ph="select * fro... ims_shop_emp" />
+            <marker date="1494321856003" expanded="true" signature="110515:110648" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="110884:111042" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="113880:113945" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="113996:114100" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="116911:116961" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117294:117433" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117904:117996" ph="SELECT `real... ims_ffan_credit_info" />
+            <marker date="1494321856003" expanded="true" signature="120625:120848" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="121863:121970" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="122682:122870" ph="SELECT `park... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="123392:123559" ph="SELECT COUNT... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="124239:124298" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124393:124413" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124482:124521" ph="SELECT sys_o... ims_act_trainsys" />
+            <marker date="1494321856003" expanded="true" signature="125454:125513" ph="SELECT openI... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="125870:125944" ph="SELECT lastT... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="126649:126710" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="127353:127414" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128001:128068" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128674:128744" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139070:139128" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139598:139661" ph="SELECT is_re... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139839:139911" ph="SELECT amoun... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="140328:140404" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="141081:141145" ph="SELECT card_... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="144180:144238" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147041:147106" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147696:147755" ph="SELECT statu... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147840:147898" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="148995:149120" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="149503:149568" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="150060:150121" ph="SELECT s_num... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="150474:150534" ph="SELECT btn_q... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151223:151285" ph="SELECT btn_e... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151988:152052" ph="SELECT btn_p... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153120:153187" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153906:153970" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="155142:155305" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156099:156261" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156623:156748" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="157355:157548" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="158189:158314" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="158921:159113" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="159753:159878" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="160352:160526" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="161272:161333" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="162534:162554" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="162621:162657" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="163213:163274" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163342:163398" ph="SELECT * FRO... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163737:163800" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="164333:164397" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165233:165289" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165568:165622" ph="select ltid ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="166373:166393" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="166552:166617" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="166978:167038" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="167647:167712" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="168010:168074" ph="select openI... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="169214:169279" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="169792:169851" ph="select * fro... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="170580:170600" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="170685:170721" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="170852:170912" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="171372:171423" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="172209:172255" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="173156:173212" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="174773:174829" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="176657:176713" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="177974:178020" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="178534:178590" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="180399:180455" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="181887:181943" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="182907:182953" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="183044:183115" ph="select lopti... ims_light_answeroption" />
+            <marker date="1494321856003" expanded="true" signature="183972:184091" ph="SELECT `crea... ims_park_entry" />
+            <marker date="1494321856003" expanded="true" signature="184161:184339" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="184466:184588" ph="select idcar... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="186861:186959" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="188038:188097" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188198:188218" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188299:188342" ph="SELECT women... ims_mc_womenswitch" />
+            <marker date="1494321856003" expanded="true" signature="188833:188889" ph="SELECT * FRO... ims_mc_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="188926:188982" ph="SELECT * FRO... ims_mc_womencard" />
+            <marker date="1494321856003" expanded="true" signature="190494:190660" ph="SELECT name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191876:191943" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191981:192037" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="192077:192132" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="196192:196254" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="197158:197220" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="198179:198249" ph="SELECT * FRO... ims_core_cache" />
+            <marker date="1494321856003" expanded="true" signature="208461:208520" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208621:208641" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208722:208761" ph="SELECT work_... ims_work_switch" />
+            <marker date="1494321856003" expanded="true" signature="209280:209347" ph="SELECT uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="209384:209442" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="209479:209532" ph="SELECT * FRO... ims_work_card" />
+            <marker date="1494321856003" expanded="true" signature="211738:211797" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="211895:211915" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="212066:212133" ph="select uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="212540:212610" ph="select name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="216294:216356" ph="select name ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="218081:218140" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="218241:218261" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="219289:219373" ph="select name,... ims_work_ownerinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eloquence/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="123" column="27" lean-forward="false" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+          <folding>
+            <marker date="1493982925124" expanded="true" signature="9016:9089" ph="SELECT uid F... ${tablename('mc_members')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50388">
+          <caret line="2964" column="47" lean-forward="true" selection-start-line="2964" selection-start-column="47" selection-end-line="2964" selection-end-column="47" />
+          <folding>
+            <marker date="1494321856003" expanded="true" signature="590:635" ph="select * fro... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="1214:1280" ph="select fanid... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="1837:1933" ph="SELECT `uid`... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="1974:2024" ph="SELECT `scor... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="2908:2963" ph="SELECT `card... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="3040:3215" ph="INSERT INTO `ims_mc_card_members`... " />
+            <marker date="1494321856003" expanded="true" signature="3310:3390" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="3535:3590" ph="SELECT `scor... ims_mc_members_score" />
+            <marker date="1494321856003" expanded="true" signature="3664:3875" ph="INSERT INTO `ims_mc_members_score`... " />
+            <marker date="1494321856003" expanded="true" signature="5156:5365" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="6306:6503" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="8512:8567" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="10954:11059" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11164:11239" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11470:11545" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11629:11689" ph="SELECT `cont... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="12017:12079" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="12376:12429" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="14631:14797" ph="SELECT m.rea... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="16036:16086" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="19011:19113" ph="select * fro... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="19411:19521" ph="SELECT id,ti... ${tablename('activity_exchange')}" />
+            <marker date="1494321856003" expanded="true" signature="19633:19710" ph="SELECT fanid... ${tablename('mc_mapping_fans')}" />
+            <marker date="1494321856003" expanded="true" signature="23186:23251" ph="SELECT score... ${tablename('park_member')}" />
+            <marker date="1494321856003" expanded="true" signature="23847:23932" ph="INSERT INTO ${tablename('mc_testSeverId')}... " />
+            <marker date="1494321856003" expanded="true" signature="25815:25900" ph="SELECT code,... ${tablename('membership_info')}" />
+            <marker date="1494321856003" expanded="true" signature="26823:26882" ph="select id fr... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="27401:27462" ph="SELECT card_... ims_mc_create_cards" />
+            <marker date="1494321856003" expanded="true" signature="27676:27756" ph="SELECT creat... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="29202:29252" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="29355:29417" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="30097:30165" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="30554:30622" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="32506:32639" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="33125:33283" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="35331:35397" ph="select mobil... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="36861:36919" ph="select zone,... " />
+            <marker date="1494321856003" expanded="true" signature="39624:39702" ph="SELECT * FRO... ims_park_floor10_test" />
+            <marker date="1494321856003" expanded="true" signature="40314:40520" ph="select Charg... Tc_Business" />
+            <marker date="1494321856003" expanded="true" signature="43408:43516" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44458:44512" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44662:44709" ph="select id fr... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="45351:45454" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="55077:55180" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="56095:56280" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="56664:56726" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="57026:57079" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="57787:57861" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="60302:60389" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="60877:61062" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="61446:61508" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="61808:61861" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="62569:62643" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="62836:62920" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="65377:65461" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="66554:66638" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="69155:69293" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69362:69475" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69544:69627" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="70499:70602" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="76840:76919" ph="SELECT `zone... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78382:78440" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78620:78679" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78833:78891" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="79620:79793" ph="SELECT * FRO... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="81125:81187" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="81534:81664" ph="select entry... ${tablename('park_entry')}" />
+            <marker date="1494321856003" expanded="true" signature="82039:82133" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="82479:82542" ph="SELECT `acce... ims_account_wechats" />
+            <marker date="1494321856003" expanded="true" signature="88541:88601" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="89587:89655" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="90625:90693" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="92284:92388" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="93831:93966" ph="select aid,c... ${tablename($voteTableName)}" />
+            <marker date="1494321856003" expanded="true" signature="94168:94250" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95219:95308" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95979:96049" ph="select count... card_error_log" />
+            <marker date="1494321856003" expanded="true" signature="96664:96789" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="96965:97077" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99223:99350" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99522:99642" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99813:99933" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100101:100187" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100534:100811" ph="update card_... " />
+            <marker date="1494321856003" expanded="true" signature="101267:101375" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="103356:103413" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="107904:108022" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108490:108553" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108605:108716" ph="select * fro... ims_shop_emp" />
+            <marker date="1494321856003" expanded="true" signature="110515:110648" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="110884:111042" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="113880:113945" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="113996:114100" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="116911:116961" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117294:117433" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117904:117996" ph="SELECT `real... ims_ffan_credit_info" />
+            <marker date="1494321856003" expanded="true" signature="120625:120848" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="121863:121970" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="122682:122870" ph="SELECT `park... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="123392:123559" ph="SELECT COUNT... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="124239:124298" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124393:124413" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124482:124521" ph="SELECT sys_o... ims_act_trainsys" />
+            <marker date="1494321856003" expanded="true" signature="125454:125513" ph="SELECT openI... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="125870:125944" ph="SELECT lastT... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="126649:126710" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="127353:127414" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128001:128068" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128674:128744" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139070:139128" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139598:139661" ph="SELECT is_re... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139839:139911" ph="SELECT amoun... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="140328:140404" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="141081:141145" ph="SELECT card_... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="144180:144238" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147041:147106" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147696:147755" ph="SELECT statu... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147840:147898" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="148995:149120" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="149503:149568" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="150060:150121" ph="SELECT s_num... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="150474:150534" ph="SELECT btn_q... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151223:151285" ph="SELECT btn_e... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151988:152052" ph="SELECT btn_p... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153120:153187" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153906:153970" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="155142:155305" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156099:156261" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156623:156748" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="157355:157548" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="158189:158314" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="158921:159113" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="159753:159878" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="160352:160526" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="161272:161333" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="162534:162554" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="162621:162657" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="163213:163274" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163342:163398" ph="SELECT * FRO... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163737:163800" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="164333:164397" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165233:165289" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165568:165622" ph="select ltid ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="166373:166393" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="166552:166617" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="166978:167038" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="167647:167712" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="168010:168074" ph="select openI... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="169214:169279" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="169792:169851" ph="select * fro... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="170580:170600" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="170685:170721" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="170852:170912" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="171372:171423" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="172209:172255" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="173156:173212" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="174773:174829" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="176657:176713" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="177974:178020" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="178534:178590" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="180399:180455" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="181887:181943" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="182907:182953" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="183044:183115" ph="select lopti... ims_light_answeroption" />
+            <marker date="1494321856003" expanded="true" signature="183972:184091" ph="SELECT `crea... ims_park_entry" />
+            <marker date="1494321856003" expanded="true" signature="184161:184339" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="184466:184588" ph="select idcar... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="186861:186959" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="188038:188097" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188198:188218" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188299:188342" ph="SELECT women... ims_mc_womenswitch" />
+            <marker date="1494321856003" expanded="true" signature="188833:188889" ph="SELECT * FRO... ims_mc_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="188926:188982" ph="SELECT * FRO... ims_mc_womencard" />
+            <marker date="1494321856003" expanded="true" signature="190494:190660" ph="SELECT name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191876:191943" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191981:192037" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="192077:192132" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="196192:196254" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="197158:197220" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="198179:198249" ph="SELECT * FRO... ims_core_cache" />
+            <marker date="1494321856003" expanded="true" signature="208461:208520" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208621:208641" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208722:208761" ph="SELECT work_... ims_work_switch" />
+            <marker date="1494321856003" expanded="true" signature="209280:209347" ph="SELECT uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="209384:209442" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="209479:209532" ph="SELECT * FRO... ims_work_card" />
+            <marker date="1494321856003" expanded="true" signature="211738:211797" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="211895:211915" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="212066:212133" ph="select uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="212540:212610" ph="select name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="216294:216356" ph="select name ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="218081:218140" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="218241:218261" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="219289:219373" ph="select name,... ims_work_ownerinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49538">
+          <caret line="2914" column="5" lean-forward="false" selection-start-line="2914" selection-start-column="5" selection-end-line="2914" selection-end-column="5" />
+          <folding>
+            <marker date="1494321856003" expanded="true" signature="590:635" ph="select * fro... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="1214:1280" ph="select fanid... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="1837:1933" ph="SELECT `uid`... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="1974:2024" ph="SELECT `scor... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="2908:2963" ph="SELECT `card... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="3040:3215" ph="INSERT INTO `ims_mc_card_members`... " />
+            <marker date="1494321856003" expanded="true" signature="3310:3390" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="3535:3590" ph="SELECT `scor... ims_mc_members_score" />
+            <marker date="1494321856003" expanded="true" signature="3664:3875" ph="INSERT INTO `ims_mc_members_score`... " />
+            <marker date="1494321856003" expanded="true" signature="5156:5365" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="6306:6503" ph="SELECT `plat... ims_park_logs" />
+            <marker date="1494321856003" expanded="true" signature="8512:8567" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="10954:11059" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11164:11239" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11470:11545" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="11629:11689" ph="SELECT `cont... ims_contract_record" />
+            <marker date="1494321856003" expanded="true" signature="12017:12079" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="12376:12429" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="14631:14797" ph="SELECT m.rea... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="16036:16086" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="19011:19113" ph="select * fro... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="19411:19521" ph="SELECT id,ti... ${tablename('activity_exchange')}" />
+            <marker date="1494321856003" expanded="true" signature="19633:19710" ph="SELECT fanid... ${tablename('mc_mapping_fans')}" />
+            <marker date="1494321856003" expanded="true" signature="23186:23251" ph="SELECT score... ${tablename('park_member')}" />
+            <marker date="1494321856003" expanded="true" signature="23847:23932" ph="INSERT INTO ${tablename('mc_testSeverId')}... " />
+            <marker date="1494321856003" expanded="true" signature="25815:25900" ph="SELECT code,... ${tablename('membership_info')}" />
+            <marker date="1494321856003" expanded="true" signature="26823:26882" ph="select id fr... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="27401:27462" ph="SELECT card_... ims_mc_create_cards" />
+            <marker date="1494321856003" expanded="true" signature="27676:27756" ph="SELECT creat... ims_membership_info" />
+            <marker date="1494321856003" expanded="true" signature="29202:29252" ph="select score... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="29355:29417" ph="select custi... ims_mc_card_members" />
+            <marker date="1494321856003" expanded="true" signature="30097:30165" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="30554:30622" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="32506:32639" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="33125:33283" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="35331:35397" ph="select mobil... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="36861:36919" ph="select zone,... " />
+            <marker date="1494321856003" expanded="true" signature="39624:39702" ph="SELECT * FRO... ims_park_floor10_test" />
+            <marker date="1494321856003" expanded="true" signature="40314:40520" ph="select Charg... Tc_Business" />
+            <marker date="1494321856003" expanded="true" signature="43408:43516" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44458:44512" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="44662:44709" ph="select id fr... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="45351:45454" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="55077:55180" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="56095:56280" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="56664:56726" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="57026:57079" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="57787:57861" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="60302:60389" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="60877:61062" ph="select `plat... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="61446:61508" ph="select count... ims_park_platenumber_log" />
+            <marker date="1494321856003" expanded="true" signature="61808:61861" ph="select count... ims_park_member" />
+            <marker date="1494321856003" expanded="true" signature="62569:62643" ph="UPDATE `ims_... " />
+            <marker date="1494321856003" expanded="true" signature="62836:62920" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="65377:65461" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="66554:66638" ph="select bind_... ${tablename('mc_platenumber_bind_log')}" />
+            <marker date="1494321856003" expanded="true" signature="69155:69293" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69362:69475" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="69544:69627" ph="update ims_m... " />
+            <marker date="1494321856003" expanded="true" signature="70499:70602" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="76840:76919" ph="SELECT `zone... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78382:78440" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78620:78679" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="78833:78891" ph="SELECT * FRO... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="79620:79793" ph="SELECT * FRO... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="81125:81187" ph="select * fro... ims_park_are" />
+            <marker date="1494321856003" expanded="true" signature="81534:81664" ph="select entry... ${tablename('park_entry')}" />
+            <marker date="1494321856003" expanded="true" signature="82039:82133" ph="select plate... ${tablename('mc_members')}" />
+            <marker date="1494321856003" expanded="true" signature="82479:82542" ph="SELECT `acce... ims_account_wechats" />
+            <marker date="1494321856003" expanded="true" signature="88541:88601" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="89587:89655" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="90625:90693" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="92284:92388" ph="SELECT * FRO... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="93831:93966" ph="select aid,c... ${tablename($voteTableName)}" />
+            <marker date="1494321856003" expanded="true" signature="94168:94250" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95219:95308" ph="select * fro... ${tablename($tableName)}" />
+            <marker date="1494321856003" expanded="true" signature="95979:96049" ph="select count... card_error_log" />
+            <marker date="1494321856003" expanded="true" signature="96664:96789" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="96965:97077" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99223:99350" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99522:99642" ph="select count... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="99813:99933" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100101:100187" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="100534:100811" ph="update card_... " />
+            <marker date="1494321856003" expanded="true" signature="101267:101375" ph="select passw... card_card_card" />
+            <marker date="1494321856003" expanded="true" signature="103356:103413" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="107904:108022" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108490:108553" ph="select * fro... card_dept_name" />
+            <marker date="1494321856003" expanded="true" signature="108605:108716" ph="select * fro... ims_shop_emp" />
+            <marker date="1494321856003" expanded="true" signature="110515:110648" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="110884:111042" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="113880:113945" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="113996:114100" ph="SELECT `mobi... ims_mc_members" />
+            <marker date="1494321856003" expanded="true" signature="116911:116961" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117294:117433" ph="SELECT COUNT... " />
+            <marker date="1494321856003" expanded="true" signature="117904:117996" ph="SELECT `real... ims_ffan_credit_info" />
+            <marker date="1494321856003" expanded="true" signature="120625:120848" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="121863:121970" ph="SELECT *,con... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="122682:122870" ph="SELECT `park... ims_parkinfo_status" />
+            <marker date="1494321856003" expanded="true" signature="123392:123559" ph="SELECT COUNT... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="124239:124298" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124393:124413" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="124482:124521" ph="SELECT sys_o... ims_act_trainsys" />
+            <marker date="1494321856003" expanded="true" signature="125454:125513" ph="SELECT openI... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="125870:125944" ph="SELECT lastT... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="126649:126710" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="127353:127414" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128001:128068" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="128674:128744" ph="SELECT from_... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139070:139128" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139598:139661" ph="SELECT is_re... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="139839:139911" ph="SELECT amoun... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="140328:140404" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="141081:141145" ph="SELECT card_... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="144180:144238" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147041:147106" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147696:147755" ph="SELECT statu... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="147840:147898" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="148995:149120" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="149503:149568" ph="SELECT times... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="150060:150121" ph="SELECT s_num... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="150474:150534" ph="SELECT btn_q... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151223:151285" ph="SELECT btn_e... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="151988:152052" ph="SELECT btn_p... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153120:153187" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="153906:153970" ph="SELECT share... ims_act_times" />
+            <marker date="1494321856003" expanded="true" signature="155142:155305" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156099:156261" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="156623:156748" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="157355:157548" ph="SELECT count... ims_act_lookcardlog" />
+            <marker date="1494321856003" expanded="true" signature="158189:158314" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="158921:159113" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="159753:159878" ph="SELECT cardI... ims_act_cardlist" />
+            <marker date="1494321856003" expanded="true" signature="160352:160526" ph="SELECT count... ims_act_getcardlog" />
+            <marker date="1494321856003" expanded="true" signature="161272:161333" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="162534:162554" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="162621:162657" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="163213:163274" ph="SELECT openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163342:163398" ph="SELECT * FRO... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="163737:163800" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="164333:164397" ph="SELECT from_... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165233:165289" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="165568:165622" ph="select ltid ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="166373:166393" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="166552:166617" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="166978:167038" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="167647:167712" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="168010:168074" ph="select openI... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="169214:169279" ph="select openI... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="169792:169851" ph="select * fro... ims_light_luckuser" />
+            <marker date="1494321856003" expanded="true" signature="170580:170600" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="170685:170721" ph="SELECT sys_o... ims_light_sys" />
+            <marker date="1494321856003" expanded="true" signature="170852:170912" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="171372:171423" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="172209:172255" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="173156:173212" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="174773:174829" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="176657:176713" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="177974:178020" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="178534:178590" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="180399:180455" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="181887:181943" ph="select * fro... ims_light_users" />
+            <marker date="1494321856003" expanded="true" signature="182907:182953" ph="select * fro... ims_light_answerlist" />
+            <marker date="1494321856003" expanded="true" signature="183044:183115" ph="select lopti... ims_light_answeroption" />
+            <marker date="1494321856003" expanded="true" signature="183972:184091" ph="SELECT `crea... ims_park_entry" />
+            <marker date="1494321856003" expanded="true" signature="184161:184339" ph="SELECT `plat... ims_park_leave" />
+            <marker date="1494321856003" expanded="true" signature="184466:184588" ph="select idcar... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="186861:186959" ph="SELECT TOP 1... Tc_UserCrdtm_In" />
+            <marker date="1494321856003" expanded="true" signature="188038:188097" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188198:188218" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="188299:188342" ph="SELECT women... ims_mc_womenswitch" />
+            <marker date="1494321856003" expanded="true" signature="188833:188889" ph="SELECT * FRO... ims_mc_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="188926:188982" ph="SELECT * FRO... ims_mc_womencard" />
+            <marker date="1494321856003" expanded="true" signature="190494:190660" ph="SELECT name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191876:191943" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="191981:192037" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="192077:192132" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="196192:196254" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="197158:197220" ph="select * fro... ims_work_share" />
+            <marker date="1494321856003" expanded="true" signature="198179:198249" ph="SELECT * FRO... ims_core_cache" />
+            <marker date="1494321856003" expanded="true" signature="208461:208520" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208621:208641" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="208722:208761" ph="SELECT work_... ims_work_switch" />
+            <marker date="1494321856003" expanded="true" signature="209280:209347" ph="SELECT uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="209384:209442" ph="SELECT * FRO... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="209479:209532" ph="SELECT * FRO... ims_work_card" />
+            <marker date="1494321856003" expanded="true" signature="211738:211797" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="211895:211915" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="212066:212133" ph="select uid,f... ims_mc_mapping_fans" />
+            <marker date="1494321856003" expanded="true" signature="212540:212610" ph="select name,... ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="216294:216356" ph="select name ims_work_ownerinfo" />
+            <marker date="1494321856003" expanded="true" signature="218081:218140" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="218241:218261" ph="..." />
+            <marker date="1494321856003" expanded="true" signature="219289:219373" ph="select name,... ims_work_ownerinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eloquence/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="229" column="28" lean-forward="false" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
+          <folding>
+            <marker date="1493982925124" expanded="true" signature="9016:9089" ph="SELECT uid F... ${tablename('mc_members')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

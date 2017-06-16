@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Slim\Welcome</h1>
+    <h1>西安邮电大学</h1>
+    <h1>计算机学院.网络1304</h1>
+    <h1>张和 04132125</h1>
+    <h1>基于微信的大型购物中心会员卡系统</h1>
+    <h1>指导教师：张晓利</h1>
+    <h1>Slim\Welcome</h1>
+</body>
+</html>

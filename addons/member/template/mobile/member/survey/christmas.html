@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../addons/member/template/mobile/christmas/css/swiper.min.css">
+    <title>好好干活 - - </title>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        .swiper-container {
+            width: 90%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            width: 88%;
+            height: 458px;
+
+            /* Center slide text vertically
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;*/
+        }
+        /*通用样式*/
+        body{
+            font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+            color:#000;
+            margin:0;
+            padding:0;
+        }
+        ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        img{
+            width:100%;
+        }
+        /*
+        *页面整体
+        */
+        body{
+            width: 100%;
+            background: url("../addons/member/template/mobile/christmas/images/bg.png") repeat ;
+            background-position:100% 100%;
+            background-size: 100%;
+            /*animation: mountain 5s linear 2s infinite;*/
+        }
+        @keyframes mountain {
+            from {
+                background-position: 100% 100% ;
+            }
+            to{
+                background-position: 0 0;
+            }
+        }
+        body:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        @keyframes in {
+            0%{
+                margin-top:230px;
+            }
+            100%{
+                margin-top:0;
+            }
+        }
+        #player{
+            width:4%;
+            position:fixed;
+            right:1%;
+            top:90%;
+        }
+        #txt{
+            width: 40%;
+            height: 40%;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            transform: rotate(90deg);
+            position:absolute;
+            z-index:100;
+
+            visibility: visible;
+            display: block;
+        }
+        #thief {
+            width: 200px;
+            position: fixed;
+            top: 110%;
+            z-index: 100;
+            transform: rotate(90deg);
+            /*animation: thief 2s linear;*/
+        }
+        @keyframes thief {
+            0%{top:110%}
+            100%{top:70%}
+        }
+        /*血条*/
+        .blood{
+            width: 100px;
+            height: 5px;
+        }
+        .blood li{
+            width:33%;
+            height: 5px;
+            float: left;
+            background: #f00;
+        }
+        /*打劫次数不足弹窗*/
+
+        .share{
+            background-color: #ddd;
+            opacity: 0.8;
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            top: -65px;
+            left: -320px;
+            z-index: 200;
+            text-align: center;
+        }
+        #at{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: 1000;
+            background-color: #000000;
+            opacity: 0.6;
+            display: none;
+        }
+        h3{
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            z-index: 1000;
+            color: #fff;
+        }
+        .hidden{
+            display: none;
+        }
+        #tCard{
+            width:50%;
+            height:30%;
+            position:absolute;
+            top:20%;
+            left:20%;
+            color:#ffffff;
+            text-align: center;
+        }
+        #tCard a{
+            color: #ffffff;
+        }
+
+        /*
+        ***********车头
+        */
+        .train_head{
+            width: 300px;
+            margin-left:28px;
+        }
+        /*
+        **旗子
+        */
+        .flag{
+            width: 150px;
+            position: relative;
+            top: -610px;
+            right: -175px;
+            z-index: -10;
+        }
+        /*
+        **云朵
+        */
+        .cloud{
+            width: 30px;
+            position: relative;
+            top: -857px;
+            right: -255px;
+            z-index: -20;
+            animation:cloud 2.4s linear infinite ;
+            animation-fill-mode: both;
+        }
+        @keyframes cloud {
+            0%{
+                width: 30px;
+                top: -857px;
+                right: -255px;
+                opacity: 1;
+            }
+            15%{
+                top: -840px;
+                right: -275px;
+            }
+            30%{
+                top: -840px;
+                right: -300px;
+                opacity: 1;
+            }
+            45%{
+                top: -800px;
+                right: -320px;
+            }
+            70%{
+                top: -700px;
+                right: -300px;
+            }
+            98%{
+                top: -590px;
+                right: -280px;
+                opacity: 0;
+            }
+            99%{
+                top: -590px;
+                right: -400px;
+                opacity: 0;
+            }
+            100%{
+                top: -590px;
+                right: -500px;
+                opacity: 0;
+            }
+        }
+        /*
+        **轮子
+        */
+        /* .rot{
+             animation:wheel 5s linear infinite ;
+         }
+         @keyframes wheel {
+             0%{transform: rotate(0deg)}
+             50%{transform: rotate(-180deg)}
+             100%{transform: rotate(-360deg)}
+         }*/
+        .wheelmiddle{
+            width: 55px;
+            position: relative;
+            left: 10px;
+        }
+        .wheelM-1{
+            top: -415px;
+        }
+        .wheelM-2{
+            top: -405px;
+        }
+        .wheelbig{
+            width: 88px;
+            position:relative;
+            left: 10px;
+        }
+        .wheelB-1{
+            top: -345px;
+        }
+        .wheelB-2{
+            top: -340px;
+        }
+        /*
+        ****************车厢01
+        */
+
+        .carriage>div{
+            width: 345px;
+            margin-left: 37px;
+        }
+        .wheelsmall{
+            width: 50px;
+            position: relative;
+            left: -26px;
+        }
+        .wheelS-1{
+            top: -402px;
+        }
+        .wheelS-2{
+            top: -167px;
+        }
+        @media screen and (max-width:376px){
+            .swiper-slide {
+                height: 427px;
+            }
+            .train_head {
+                width: 279px;
+                margin-left: 27px;
+            }
+            .wheelM-1 {
+                top: -380px;
+            }
+            .wheelM-2 {
+                top: -375px;
+            }
+            .wheelmiddle {
+                width: 52px;
+            }
+            .wheelB-1 {
+                top: -315px;
+            }
+            .wheelB-2 {
+                top: -312px;
+            }
+            .wheelbig {
+                width: 80px;
+            }
+            .wheelS-1 {
+                top: -370px;
+            }
+            .wheelS-2 {
+                top: -165px;
+            }
+            .flag {
+                width: 136px;
+                top: -560px;
+                right: -188px;
+            }
+            .cloud {
+                width: 26px;
+                top: -793px;
+                right: -265px;
+            }
+            .carriage>div {
+                width: 321px;
+                margin-left: 35px;
+                height: 426px;
+            }
+            @keyframes cloud {
+                0% {
+                    top: -793px;
+                    right: -265px;
+                    opacity: 1;
+                }
+                30% {
+                    top: -760px;
+                    right: -300px;
+                    opacity: 1;
+                }
+                98% {
+                    top: -480px;
+                    right: -270px;
+                    opacity: 0;
+                }
+                99% {
+                    top: -590px;
+                    right: -400px;
+                    opacity: 0;
+                }
+                100% {
+                    top: -590px;
+                    right: -500px;
+                    opacity: 0;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="hidden" id="openId" name="openId" value="{$openId}" />
+    <audio id="bgSound" autoplay loop>
+        <source src="../addons/member/template/mobile/christmas/jingle-bells.mp3" type="audio/mpeg">
+    </audio>
+    <div id="player"><img id='pIcon' src="../addons/member/template/mobile/christmas/images/play.png" class="play" onclick="music(this);"/></div>
+    <div id="txt" class="show"><a id ='tbtn' href="#">我是文案框</a></div>
+    <div id="thief">
+        <a id='rob' href="#"><img src="../addons/member/template/mobile/christmas/images/thief.gif" alt=""/></a>
+        <div id="share" class="share hidden">分享试试吧</div>
+        <ul id="blood" class="blood"></ul>
+    </div>
+    
+    <div id="at" class="at">
+        <h3>这是gif1</h3>
+        <h3 class="hidden">这是gif2</h3>
+        <h3 class="hidden">这是gif3</h3>
+        <h3 class="hidden">这是gif4</h3>
+        <table id="tCard" class="hidden">
+            <tr>
+                <th colspan="2">优惠券：</th>
+            </tr>
+            <tr>
+                <td><a id='take' href="">领取</a></td>
+                <td><a id='back' >返回</a></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+           <!--<div class="swiper-slide">
+                <div class="train_head"><img src="../addons/member/template/mobile/christmas/images/train.png" alt=""/></div>
+                <p class="wheelmiddle wheelM-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                <p class="wheelmiddle wheelM-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                <p class="wheelbig wheelB-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                <p class="wheelbig wheelB-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                <h1 class="flag"><img src="../addons/member/template/mobile/christmas/images/flag_0.png" alt=""/></h1>
+                <h2 class="cloud"><img src="../addons/member/template/mobile/christmas/images/cloud.png" alt=""/></h2>
+            </div>-->
+            <!--<div class="swiper-slide carriage">
+                <div id='cg_1' class="carriage_01">
+                    <img src="../addons/member/template/mobile/christmas/images/carrig_02.png" alt=""/>
+                    <p class="wheelsmall wheelS-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                    <p class="wheelsmall wheelS-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                </div>
+            </div>
+            <div class="swiper-slide carriage">
+                <div id='cg_2' class="carriage_01">
+                    <img src="../addons/member/template/mobile/christmas/images/carrig_02.png" alt=""/>
+                    <p class="wheelsmall wheelS-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                    <p class="wheelsmall wheelS-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                </div>
+            </div>
+            <div class="swiper-slide carriage">
+                <div id='cg_3' class="carriage_01">
+                    <img src="../addons/member/template/mobile/christmas/images/carrig_02.png" alt=""/>
+                    <p class="wheelsmall wheelS-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                    <p class="wheelsmall wheelS-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+                </div>
+            </div>-->
+           
+            <!--<div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>-->
+            
+        </div>
+    </div>
+
+<script src="../addons/member/template/mobile/christmas/js/jquery-1.11.3.js"></script>
+<script src="../addons/member/template/mobile/christmas/js/swiper.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>    
+    var swiper;
+    window.setTimeout(function(){
+    	
+//  	    swiper = new Swiper('.swiper-container', {
+//          direction: 'vertical',
+//          mousewheelControl:true,
+//          freeMode : true,
+//          centeredSlides : true,
+//          slidesPerView : 'auto'
+//          //freeModeSticky : true
+//     		 });
+    },100);
+
+        
+         $('.swiper-wrapper').css('margin-top','230px');
+        (function(){
+            /* 横屏检测*/
+            var init = function(){
+                var updateOrientation = function(){
+                    var orientation = window.orientation;
+                    switch(orientation){
+                        case 90:
+                        case -90:alert('请锁定竖屏观看哦');//这里是横屏
+                            break;
+                        default://这里是竖屏
+                            break;
+                    }
+                };
+                // 每次旋转，调用这个事件。
+                window.addEventListener('orientationchange',updateOrientation,false);
+                // 事件的初始化
+                updateOrientation();
+            };
+            window.addEventListener('DOMContentLoaded',init,false);
+            /*解决部分ios微信无法自动播放音频*/
+            function autoPlayAudio1() {
+                wx.config({
+                    // 配置信息, 即使不正确也能使用 wx.ready
+                    debug: false,
+                    appId: '',
+                    timestamp: 1,
+                    nonceStr: '',
+                    signature: '',
+                    jsApiList: []
+                });
+                wx.ready(function() {
+                    document.getElementById('bgSound').play();
+                });
+            }
+            autoPlayAudio1();
+        })();
+        /*旗帜飘动的图片轮播*/
+        function flag(){
+            i = 0;
+            timer = setInterval("goUp(i++);", 400);
+        }
+        function goUp(){
+            i = i % 2;
+            var src ="../addons/member/template/mobile/christmas/images/flag_" + i + "." + "png";
+            $('.flag>img').attr("src",src);
+        }
+        /*音乐暂停播放及图标更换*/
+        function music(){
+            var pIcon=$('#pIcon');
+            var bgSound= document.getElementById('bgSound');
+            bgSound.innerHTMLhtml='<source src="../addons/member/template/mobile/christmas/jingle-bells.mp3" type="audio/mpeg">';
+            if(pIcon.hasClass('play')){
+                pIcon.attr("src","../addons/member/template/mobile/christmas/images/pause.png");
+                pIcon.addClass('pause');
+                pIcon.removeClass('play');
+                bgSound.pause();
+            }else  if(!pIcon.hasClass('play')){
+                pIcon.attr("src","../addons/member/template/mobile/christmas/images/play.png");
+                pIcon.addClass('play');
+                pIcon.removeClass('pause');
+                bgSound.play();
+            }
+        }
+
+        /*文案框点击隐藏及火车动画的启动*/
+        function txt(){
+
+            $('#txt').click(function(){
+                if($(this).hasClass('show')) {
+                    $(this).css('display', 'none');
+                }
+                $('.swiper-wrapper').css({'animation':'in 3s linear', 'animation-fill-mode':'forwards'});
+                $('body').css('animation',' mountain 8s linear 3s infinite');
+                $('#thief').css({'animation':'thief 2s linear','animation-fill-mode':'forwards'});
+            });
+        }
+        //gif切换
+        function rob(){
+            $('#at').on('click','h3',function(){
+                $(this).addClass('hidden').next().removeClass('hidden');
+            });
+            $('#back').click(function(e){
+                e.preventDefault();
+                $('#at').css('display','none').removeClass('at');
+            });
+        }
+       // flag();
+        txt();
+        rob();
+    </script>
+
+<script>
+    	var openId=$('#openId').val();
+        var count='';
+        var cardId='';
+        var cardName='';
+    	  $(document).ready(function(){
+    	  	//console.log(swiper);
+			$.ajax({
+				type: 'GET',
+				url: 'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=GetCardList&m=member#wechat',
+				success: function(res){
+//					console.log(res);
+					var resdata=JSON.parse(res);
+					var html = "";
+					console.log(resdata);
+					$.each(resdata, function(i, p){
+						html += `
+							<div cardId='${p.cardId}'  name='${p.cardName}' count='${p.s_num}' class="swiper-slide carriage">
+				                <div  class="carriage_01">
+				                    <img src="${p.train_img}" alt=""/>
+				                    <p class="wheelsmall wheelS-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+				                    <p class="wheelsmall wheelS-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+				                </div>
+				            </div>	
+						`;
+					});
+					
+					
+					var trainHead=` <div class="swiper-slide">
+		                <div class="train_head"><img src="../addons/member/template/mobile/christmas/images/train.png" alt=""/></div>
+		                <p class="wheelmiddle wheelM-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+		                <p class="wheelmiddle wheelM-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+		                <p class="wheelbig wheelB-1 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+		                <p class="wheelbig wheelB-2 rot"><img src="../addons/member/template/mobile/christmas/images/wheel.png" alt=""/></p>
+		                <h1 class="flag"><img src="../addons/member/template/mobile/christmas/images/flag_0.png" alt=""/></h1>
+		                <h2 class="cloud"><img src="../addons/member/template/mobile/christmas/images/cloud.png" alt=""/></h2>
+		            </div>`;
+            	
+					html=trainHead+html;
+					$('.swiper-wrapper').html(html);	
+					
+					swiper = new Swiper('.swiper-container', {
+				            direction: 'vertical',
+				            mousewheelControl:true,
+				            freeMode : true,
+				            centeredSlides : true,
+				            slidesPerView : 'auto'
+				            //freeModeSticky : true
+		       		 });
+					 
+				}
+			}); 
+			 /*功能二：页面开始请求领卡次数*/
+            $.ajax({
+                type:'POST',
+                url:'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=GetTodayTimes&m=member#wechat',//{"status":"1","times":"2"}
+                data:{'openId':openId},
+                success:function(res){
+                    var resdata=JSON.parse(res);
+                    count=resdata.times;
+                    var blood='';
+                    for(var i=0;i<count;i++) {
+                        blood+='<li></li>';
+                    }
+                    $('#blood').html(blood);
+                }
+            });
+		});
+		
+		
+		//document ready end
+		
+        /*功能三：抽奖事件*/
+        $('#rob').click(function(){
+            /*当打劫次数小于0时，点击弹出分享提示*/
+            var blood='';
+            if(count<=0){
+                $('#share').removeClass('hidden');
+                $('#share').click(function(){$(this).addClass('hidden')});
+            }else {
+                /*打劫次数大于0时，点击弹出动画 血条减1*/
+                count--;
+                $('#at').css('display', 'block').removeClass('at');
+                $('#at h3:eq(0)').removeClass('hidden').siblings().addClass('hidden');
+                for(var i=0;i<count;i++) {
+                    blood+='<li></li>';
+                }
+                $('#blood').html(blood);
+                /*获取当前车厢的索引 获得cardId 与cardName  异步提交获得抽奖结果*/
+                var index = swiper.activeIndex;
+                console.log(swiper.slides);
+                cardId = swiper.slides.eq(index).attr('cardId');
+                cardName=swiper.slides.eq(index).attr('name');
+                console.log(cardName);
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=WhetherGetCard&m=member#wechat',
+                    data: {'openId': openId, 'cardId': cardId},
+                    success: function (res) {
+                        /*根据返回状态 拼接页面内容*/
+                        var resdata = JSON.parse(res);
+                        var html = '';
+                        if (resdata.status == 0) {
+                           html='没抽到';
+                        } else if (resdata.status == 1) {
+                            html ='中奖';
+                        } else if (resdata.status == 2) {
+                            html ='冰棍';
+                        }
+                        $('#tCard th').html(html);
+
+                    }
+                });
+            }
+
+        });
+		/*功能四：分享按钮异步提交openId*/
+        function share(){
+            $.ajax({
+                type:'POST',
+                url:'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=EditGetTimes&m=member#wechat',
+                data:{'openId':openId},
+                success:function(res){
+                    var resdata=JSON.parse(res);
+                    if(resgata.status===1){
+                        count++;    
+                    }
+                   
+                }
+            });
+        }
+        /*功能五：领券按钮异步提交openId cardId cardName*/
+        
+        function takeCard(){
+            $('#take').click(function(e){
+                e.preventDefault();
+                $('#at').css('display','none').removeClass('at');
+                $.ajax({
+                    type:'POST',
+                    url:'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=GetCardLog&m=member#wechat',
+                    data:{'openId':openId,'cardId':cardId,'cardName':cardName },
+                    success:function(res){
+                        var resdata=JSON.parse(res);
+                        //var html='';
+                        if(resdata.status===1){
+                            console.log('领取成功');
+                        }
+                    }
+                    
+
+                });
+            });
+        }
+        takeCard();
+
+    </script>
+
+    
+    
+    
+    
+    
+    
+    
+<script type="text/javascript">
+  var urls=location.href;
+  wx.config({
+       debug: false,
+       appId: "{$_W['account']['jssdkconfig']['appId']}",
+       timestamp: "{$_W['account']['jssdkconfig']['timestamp']}",
+       nonceStr: "{$_W['account']['jssdkconfig']['nonceStr']}",
+       signature: "{$_W['account']['jssdkconfig']['signature']}",
+       jsApiList: [
+           'checkJsApi',               // 判断当前客户端版本是否支持指定JS接口
+           'onMenuShareTimeline',      // 分享到朋友圈
+           'onMenuShareAppMessage',    // 分享给朋友
+           'onMenuShareQQ',            // 分享到QQ
+           'onMenuShareWeibo',         // 分享到腾讯微博
+           'hideMenuItems',            // 批量隐藏功能按钮接口
+           'showMenuItems',            // 批量显示功能按钮接口
+           'hideAllNonBaseMenuItem',   // 隐藏所有非基础按钮接口
+           'showAllNonBaseMenuItem',   // 显示所有功能按钮接口
+           'getNetworkType',           // 获取网络状态接口
+           'openLocation',             // 使用微信内置地图查看位置接口
+           'getLocation',              // 获取地理位置接口
+           'hideOptionMenu',           // 批量隐藏功能按钮接口
+           'showOptionMenu',           // 批量显示功能按钮接口
+           'closeWindow',              // 关闭当前网页窗口接口
+           'addCard',                  // 批量添加卡券接口
+           'chooseCard',               // 调起适用于门店的卡券列表并获取用户选择列表
+           'openCard',                 // 查看微信卡包中的卡券接口
+     		'chooseImage',
+           'previewImage',
+           'uploadImage',
+           'downloadImage'
+       ]
+   });
+
+   wx.ready(function(){
+        // 分享到朋友券
+        
+
+        wx.onMenuShareTimeline({
+           title: "打劫抽奖整起来！ ", // 分享标题
+           link: urls, // 分享链接
+           imgUrl: 'http://wx.cnsaga.com/addons/member/template/mobile/static/chasing/images/share.jpg', // 分享图标
+           success: function (res) {
+				share();
+				location.reload();
+           }
+       });
+       
+       
+		// 分享给朋友
+       wx.onMenuShareAppMessage({
+           title: "打劫抽奖整起来！ ", // 分享标题
+           desc:  "抽吧 嗯...", // 分享描述
+           link: urls, // 分享链接
+           imgUrl: 'http://wx.cnsaga.com/addons/member/template/mobile/static/chasing/images/share.jpg', // 分享图标
+           success: function (res) {
+				share();
+				location.reload();
+           }
+       });
+
+ 
+   });
+ </script>
+    
+    
+</body>
+</html>

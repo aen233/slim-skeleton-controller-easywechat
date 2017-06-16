@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>同步失败</title>
+   	<link rel="stylesheet" href="../addons/eloquence/template/mobile/list/css/weui.css"/>
+    <link rel="stylesheet" href="../addons/eloquence/template/mobile/list/css/example.css"/>
+</head>
+<body ontouchstart>
+<div class="container" id="container">
+    <!--
+    <div class="page msg_warn js_show">
+        <div class="weui-msg">
+            <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+            <div class="weui-msg__text-area">
+                <h2 class="weui-msg__title">激活失败</h2>
+
+            </div>
+            <div class="weui-msg__opr-area">
+                <p class="weui-btn-area">
+                    <a href="#" class="weui-btn weui-btn_primary">推荐操作</a>
+                    <a href="#" class="weui-btn weui-btn_default">辅助操作</a>
+                </p>
+            </div>
+            <div class="weui-msg__extra-area">
+                <div class="weui-footer">
+                    <p class="weui-footer__links">
+                        <a href="javascript:void(0);" class="weui-footer__link">底部链接文本</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    -->
+
+    <div class="page msg_warn js_show">
+        <div class="weui-msg">
+            <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+            <div class="weui-msg__text-area">
+                <h2 class="weui-msg__title">同步失败</h2>
+
+            </div>
+            <div class="weui-msg__opr-area">
+                <p class="weui-btn-area">
+                    <a href="javascript:window.close();" class="weui-btn weui-btn_primary" onclick="WeixinJSBridge.call('closeWindow');>系统繁忙轻稍再试</a>
+                    <!--<a href="#" class="weui-btn weui-btn_default">辅助操作</a>-->
+                </p>
+            </div>
+            <div class="weui-msg__extra-area">
+                <div class="weui-footer">
+                    <p class="weui-footer__links">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

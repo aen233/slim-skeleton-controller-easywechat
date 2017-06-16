@@ -1,0 +1,141 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/2/10
+ * Time: 19:24
+ */
+
+namespace App\Repository;
+use App\Repository\CardRepository;
+
+use App\Repository\Repositories;
+
+use App\Library\Card;
+
+class WeChatRepository
+{
+    /**
+     * @var \App\Repository\Repositories
+     */
+    protected $item;
+
+    /**
+     * @var \EasyWeChat\Foundation\Application
+     */
+    protected $WeChat;
+
+    public function __construct(Repositories $item)
+    {
+        $this->item = $item;
+        $this->WeChat = $item->getWeChatApplication();
+    }
+    public function createWXCard($arr)
+    {
+        $card = $this->WeChat->card;
+        $cardType = 'MEMBER_CARD';
+        $baseInfo = [
+            'pay_info'=>[
+                'swipe_card'=>[
+                    'is_swipe_card'=>true
+                ]
+            ],
+            'logo_url' => $arr['logo_url'],
+            'brand_name' => '西安赛格国际购物中心',
+            'code_type' => 'CODE_TYPE_BARCODE',
+            'title' => $arr['cardname'],
+            'color' => 'Color010',
+            'notice' => '使用时请出示此券',
+            'service_phone' => '029-86300000',
+            'description' => "不可与其他优惠同享",
+            'date_info' => [
+                'type' => 'DATE_TYPE_PERMANENT'
+            ],
+            'sku' => [
+                'quantity' => $arr['quantity'], //自定义code时设置库存为0
+            ],
+            'get_limit' => $arr['get_limit'],
+            'location_id_list' => ['464836533'],  //获取门店位置poi_id，具备线下门店的商户为必填
+            'use_custom_code' => false, //自定义code时必须为true
+            'can_share' => true,
+            'can_give_friend' => false,
+            'custom_url_name' => $arr['custom_url_name'],
+            'custom_url' => $arr['custom_url'],
+            "promotion_url_name" =>$arr['promotion_url_name'],
+            'promotion_url' => $arr['promotion_url'],
+        ];
+        $especial = [
+            "auto_activate"=> false,
+            "wx_activate"=> true,
+            "wx_activate_after_submit" =>true,
+            "wx_activate_after_submit_url"=>$arr['wx_activate_after_submit_url'],
+            "background_pic_url" =>$arr['background_pic_url'],
+            "supply_bonus"=>true,
+            "supply_balance"=>false,
+            "prerogative"=> "尊享品牌满4000减1000，满600减100
+                              折上满减、可拼单累计、以此类推
+                              凭小票至各楼层收银台结算
+                              单件商品不可拆分开具小票
+                              不与商场其他活动共享
+                              特价商品除外
+                              优先就餐
+                              就餐优先免排队
+                              免费停车
+                              本中心广场、空中花园停车场随意免费停车不限时。
+                              全程导购专享服务及免费包装礼品",
+            "custom_field1"=> [
+                "name_type"=> "FIELD_NAME_TYPE_LEVEL",
+                "url"=> $arr['custom_field1_url']
+            ],
+            "custom_field2"=>[
+                "name_type"=> "FIELD_NAME_TYPE_COUPON",
+                "url"=> $arr['custom_field2_url']
+            ],
+            "custom_cell1"=>[
+                "name"=>$arr['custom_cell1_name'],
+                "url" =>$arr['custom_cell1_url']
+            ]
+
+        ];
+        $result = $card->create($cardType, $baseInfo, $especial);
+        return $result->get('card_id');
+    }
+    public function WXQR($carid){
+        $card = $this->WeChat->card;
+        $cards = [
+            'action_name' => 'QR_CARD',
+            'expire_seconds' => 1800,
+            'action_info' => [
+                'card' => [
+                    'card_id' => $carid,
+                    'is_unique_code' => false,
+                    'outer_id' => 1,
+                ],
+            ],
+        ];
+        return $card->QRCode($cards)->get('show_qrcode_url');
+    }
+
+    public function WXuserform($cardId)
+    {
+        $card = $this->WeChat->card;
+        $requiredForm = [
+            'required_form' => [
+                'common_field_id_list' => [
+                    "USER_FORM_INFO_FLAG_MOBILE",
+                    "USER_FORM_INFO_FLAG_NAME",
+                    "USER_FORM_INFO_FLAG_IDCARD"
+                ]
+            ]
+        ];
+        $optionalForm = [];
+        return $card->activateUserForm($cardId, $requiredForm, $optionalForm);
+    }
+
+    public function gettempinfo()
+    {
+        $card = $this->WeChat->card;
+        return $card->getactivatetempinfo();
+    }
+
+}

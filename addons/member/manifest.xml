@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="0.6">
+	<application setting="true">
+		<name><![CDATA[会员中心]]></name>
+		<identifie><![CDATA[member]]></identifie>
+		<version><![CDATA[1.0]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[赛格微会员管理中心]]></ability>
+		<description><![CDATA[主要功能有完成基本资料、积分说明、扣分抽奖等功能]]></description>
+		<author><![CDATA[祝海亮]]></author>
+		<url><![CDATA[http://wx.cnsaga.com]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+		</handles>
+		<rule embed="false" />
+	</platform>
+	<bindings>
+		<shortcut>
+            <entry title="会员中心页" do="member" state="" direct="false" />
+			<entry title="绑定资料" do="binding" state="" direct="false" />
+			<entry title="积分说明" do="integral" state="" direct="false" />
+			<entry title="积分抽奖" do="lottery" state="" direct="false" />
+			<entry title="积分换券" do="gift" state="" direct="false" />
+			<entry title="我的优惠券" do="coupon" state="" direct="false" />
+			<entry title="商场购物记录" do="goods" state="" direct="false" />
+		</shortcut>
+	</bindings>
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

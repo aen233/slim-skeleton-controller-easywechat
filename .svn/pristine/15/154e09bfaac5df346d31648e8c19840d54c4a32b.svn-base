@@ -1,0 +1,67 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/2/10
+ * Time: 11:08
+ */
+
+namespace App\Controllers;
+
+
+use App\Helper\Helper;
+use App\Repository\Repositories;
+use App\Library\Core;
+use EasyWeChat\Foundation\Application;
+
+/**
+ * Class WeChatController
+ * @package App\Controllers
+ */
+class WeChatController
+{
+    protected $item;
+
+    public function __construct(Repositories $item)
+    {
+        $this->item = $item;
+    }
+
+
+    public function getToken()
+    {
+        $app =$this->item->getWeChatApplication();
+
+        $access_token =$app->access_token;
+        echo  $access_token->getToken();
+    }
+
+    public function serve()
+    {
+        $app = $this->item->getWeChatApplication();
+        $server = $app->server;
+
+        /**
+         *  微信被动接受消息入口
+         */
+        $server->setMessageHandler(function($message){
+            if($message->MsgType == 'event'){
+                // 事件映射至类名
+                $class = Helper::eventToClass($message->Event);
+                $className = "\\App\\Event\\".$class;
+                if(in_array($message->Event,Helper::$eventList)){
+                    // 由对应的类名加载处理微信事件
+                   $item=new Core(new $className);
+                   $item->MsgHandle($message);
+
+
+                }
+            }
+        });
+
+        //数据token 验证
+        $response = $server->serve();
+        $response->send();
+    }
+
+}

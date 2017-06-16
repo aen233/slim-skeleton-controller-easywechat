@@ -1,0 +1,20 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lin
+ * Date: 17-2-8
+ * Time: 上午9:42
+ */
+
+namespace App\Event;
+
+use App\Event\EventReceiver;
+
+class Subscribe implements EventReceiver
+{
+    public function handle($message)
+    {
+        // TODO: Implement handle() method.
+        var_dump('subscribe');
+    }
+}

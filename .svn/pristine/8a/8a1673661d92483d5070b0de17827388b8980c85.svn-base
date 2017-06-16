@@ -1,0 +1,78 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/2/13
+ * Time: 9:19
+ */
+
+namespace App\Controllers;
+
+use App\Repository\WeChatRepository;
+use App\Repository\CardRepository;
+use App\Repository\Repositories;
+
+use App\Library\Card;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
+class WeCardcontroller
+{
+
+    protected $item;
+
+    public function __construct(CardRepository $db,WeChatRepository $item)
+    {
+        //  $this->item = new Repositories();
+        $this->item = $item;
+        $this->db = $db;
+    }
+
+
+    public function createCard()
+    {
+        $arr=[
+            'logo_url' => 'http://mmbiz.qpic.cn/mmbiz_jpg/6Qs5bXJZ38IEUCzPXamUgY71YgjyychRzguvOTujR8WWH5hVZeR2Aawt9RXdxRpbju2nSHGwMI44vicX4O7Daibg/0',
+            'background_pic_url'=>'http://mmbiz.qpic.cn/mmbiz_png/6Qs5bXJZ38LxrnPkdZvp4JMNjB238LeYeyWkia5PKGpxE9whSqeJtxqZTDyvq5rY4WXtuWdd1qOdChQxevibpMqw/0?wx_fmt=jpeg',
+            //'wx_activate_after_submit_url'=>'http://api.cnsaga.com/card/tempinfo',
+            'cardname' => '测试1.3',
+            'quantity' =>  100000,
+            'get_limit'=>  100,
+            //等级
+            'custom_field1_url'=>'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=Benefit&m=member&from=singlemessage',
+            //优惠券
+            'custom_field2_url'=>'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=coupons&m=member',
+            'custom_url_name'=>'会员中心',
+            'custom_url'=>'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=member&m=member',
+            'custom_cell1_name'=>'热门活动',
+            'custom_cell1_url'=>'http://mp.weixin.qq.com/mp/getmasssendmsg?__biz=MjM5NDE0OTIwMQ==&from=singlemessage#wechat_webview_type=1&wechat_redirect',
+            'promotion_url_name'=>'会员权益',
+            'promotion_url'=>'http://wx.cnsaga.com/app/index.php?i=4&c=entry&do=Rights&m=member'
+        ];
+        $card_id=$this->item->createWXCard($arr);
+        $this->item->WXuserform($card_id);
+        $data=[
+            'cardname' => '测试1.3',
+            'create_method' => 3,
+            'uniacid'=> 4,
+            'cid'=> 0,
+            'card_id'=>$card_id,
+            'create_time'=>time()
+        ];
+        $insert=$this->db->insertcreate($data);
+        var_dump($insert);
+        return $card_id;
+    }
+    public function QR()
+    {
+        $cardid=$this->db->searchcur();
+        $show_qrcode_url=$this->item->WXQR($cardid);
+        echo "<script>location.href='$show_qrcode_url'</script>";
+    }
+
+    public function tempinfo(RequestInterface $request,ResponseInterface $response)
+    {
+        $a=$request->isGet();
+        var_dump($a);
+    }
+}

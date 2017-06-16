@@ -1,0 +1,31 @@
+<?php
+
+namespace  App\Controllers;
+
+/**
+ * Class Index
+ * @package App\Controllers
+ */
+class WeChat extends Controller
+{
+    public function getToken()
+    {
+        $access_token =$this->wechat->access_token->getToken();
+        echo  $access_token;
+    }
+
+
+
+    public function getuser(){
+        $users=$this->wechat->user->lists();
+        echo "<pre>";
+        $openids= $users->data;
+
+        var_dump($openids);
+        // var_dump($this->wechat->user->batchGet($openids));
+
+    }
+}
+
+
+

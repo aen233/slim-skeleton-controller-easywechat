@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddMemberPlateNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plateNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMemberPlateNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddMemberPlateNumberResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMemberPlateNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plateNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMemberPlateNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteMemberPlateNumberResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddMemberPlateNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMemberPlateNumber" />
+  </wsdl:message>
+  <wsdl:message name="AddMemberPlateNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMemberPlateNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMemberPlateNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMemberPlateNumber" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMemberPlateNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMemberPlateNumberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceForWeixinSoap">
+    <wsdl:operation name="AddMemberPlateNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">添加会员车牌号</wsdl:documentation>
+      <wsdl:input message="tns:AddMemberPlateNumberSoapIn" />
+      <wsdl:output message="tns:AddMemberPlateNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberPlateNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除会员车牌号</wsdl:documentation>
+      <wsdl:input message="tns:DeleteMemberPlateNumberSoapIn" />
+      <wsdl:output message="tns:DeleteMemberPlateNumberSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceForWeixinSoap" type="tns:WebServiceForWeixinSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddMemberPlateNumber">
+      <soap:operation soapAction="http://tempuri.org/AddMemberPlateNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberPlateNumber">
+      <soap:operation soapAction="http://tempuri.org/DeleteMemberPlateNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceForWeixinSoap12" type="tns:WebServiceForWeixinSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddMemberPlateNumber">
+      <soap12:operation soapAction="http://tempuri.org/AddMemberPlateNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberPlateNumber">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMemberPlateNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceForWeixin">
+    <wsdl:port name="WebServiceForWeixinSoap" binding="tns:WebServiceForWeixinSoap">
+      <soap:address location="http://120.199.4.30:8500/WebServiceForWeixin.asmx?wsdl" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceForWeixinSoap12" binding="tns:WebServiceForWeixinSoap12">
+      <soap12:address location="http://120.199.4.30:8500/WebServiceForWeixin.asmx?wsdl" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

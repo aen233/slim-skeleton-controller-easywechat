@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="main" style="color :red ; font-size:70px;">
+
+    </div>
+</body>
+    <script type="text/javascript">
+        function navs(){
+            var navinfo = document.createTextNode(navigator.appName);
+            var navver = document.createTextNode(navigator.appVersion);
+            var s= document.getElementById('main');
+            s.appendChild(navinfo);
+            s.appendChild(navver);
+        }
+
+        navs();
+    </script>
+</html>

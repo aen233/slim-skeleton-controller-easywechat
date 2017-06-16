@@ -1,0 +1,30 @@
+<?php
+
+namespace  App\Controllers;
+
+use App\Helper\Helper;
+use App\Library\Core;
+use EasyWeChat\Foundation\Application;
+/**
+ * Class Index
+ * @package App\Controllers
+ */
+class WeChat extends Controller
+{
+    public function getToken()
+    {
+        $access_token =$this->wechat->access_token->getToken();
+        echo  $access_token;
+    }
+
+    public function serve()
+    {
+        $app = $this->wechat;
+
+        $response = $app->server->serve();
+// 将响应输出
+        $response->send();
+
+    }
+}
+

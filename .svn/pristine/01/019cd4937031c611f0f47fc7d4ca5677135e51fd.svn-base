@@ -1,0 +1,36 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lin
+ * Date: 17-2-8
+ * Time: 上午10:10
+ */
+
+namespace App\Event;
+
+
+class UserGetCard implements EventReceiver
+{
+
+    /**
+     * @param $message
+     * @return string
+     */
+    public  function handle($message)
+    {
+        return 'aaaaaa';
+        //var_dump($message);
+        //$cardId     = $message->CardId;
+
+        //if($this->item->judgeMemberCard($cardId)){ //判断领卡事件是否为领取会员卡
+        //    $openid     = $message->FromUserName;
+        //    $code       = $message->UserCardCode;
+        //    $outerId    = $message->OuterId;
+        //    $this->item->recordCard($openid,$code,$cardId,$outerId);
+            /*if($this->item->oldMember()) {
+                $this->autoActive($openid, $code);
+            }*/
+        //}
+
+    }
+}

@@ -1,0 +1,155 @@
+{template 'common/header'}
+<ul class="nav nav-tabs">
+	<li class="active"><a href="{php echo url('mc/wx_memberscore')}">会员积分管理</a></li>
+</ul>
+{if $do!='modify'}
+<div class="panel panel-info">
+	<div class="panel-heading">请选择筛选条件</div>
+	<div class="panel-body">
+		<form action="./index.php" method="get" class="form-horizontal" role="form" id="form">
+		<input type="hidden" name="c" value="mc">
+		<input type="hidden" name="a" value="wx_memberscore">
+			<div class="form-group">
+				<label class="col-xs-12 col-sm-2 col-md-2 control-label">会员卡号</label>
+				<div class="col-sm-8 col-xs-12">
+					<input type="text" class="form-control" name="cardsn"  value="{$_GPC['cardsn']}" />
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-xs-12 col-sm-2 col-md-2 control-label">手机号码</label>
+				<div class="col-sm-8 col-xs-12">
+					<input type="text" class="form-control" name="mobile"  value="{$_GPC['mobile']}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-xs-12 col-sm-2 col-md-2 control-label">用户UID</label>
+				<div class="col-sm-8 col-xs-12">
+					<input type="text" class="form-control" name="uid"  value="{$_GPC['uid']}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-xs-12 col-sm-3 col-md-2 control-label">真实姓名</label>
+				<div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+					<input type="text" class="form-control" name="realname" value="{$_GPC['realname']}" />
+				</div>
+				<div class="pull-right col-xs-12 col-sm-3 col-md-2 col-lg-2">
+					<button class="btn btn-default"><i class="fa fa-search"></i> 搜索</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-body table-responsive">
+	<table class="table table-hover">
+		<input type="hidden" name="do" value="del" />
+		<thead class="navbar-inner">
+			<tr>
+				<th style="min-width:40px;">会员编号</th>
+				<th style="min-width:44px;">会员卡号</th>
+				<th style="min-width:110px;">Openid</th>
+				<th style="min-width:40px;">真实姓名</th>
+				<th style="min-width:44px;">手机号码</th>
+				<th style="min-width:30px;">停车积分</th>
+				<th style="min-width:30px;">购物积分</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		{loop $list $li}
+		<thead>
+			<tr>
+				<td style="vertical-align:middle">{$li['uid']}</td>
+				<td style="vertical-align:middle">{$li['cardsn']}</td>
+				<td style="vertical-align:middle">{$li['openid']}</td>
+				<td style="vertical-align:middle">{$li['realname']}</td>
+				<td style="vertical-align:middle">{$li['mobile']}</td>
+				<td style="vertical-align:middle">{$li['pscore']}</td>
+				<td style="vertical-align:middle">{$li['bscore']}</td>
+				<td>
+					<a href="{php echo url('mc/wx_memberscore',array('uid' => $li['uid'],'do'=>'modify'))}" id="{$li['uid']}" class="btn btn-default btn-sm recharge" data-toggle="tooltip" data-placement="top" title="积分操作"><i class="fa fa-dollar">修改</i></a>
+				</td>
+			</tr>
+		</thead>
+		{/loop}
+	</table>
+</div>
+</div>
+{$pager}
+{/if}
+{if $do=='modify'}
+<div class="main">
+	{if $profile !=''}
+<form action="" class="form-horizontal form" method="post" >
+<div class="panel panel-default">
+	<input type="hidden" name="uid" value="{$uid}" />
+	<input type="hidden" name="mscore" value="mscore" />
+	<input type="hidden" name="cardsn" value="{$profile['0']['cardsn']}" />
+	<input type="hidden" name="mpscore" value="{$profile['0']['pscore']}" />
+	<input type="hidden" name="mbscore" value="{$profile['0']['bscore']}" />
+	<div class="panel-heading">
+		积分调整
+	</div>
+	<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> 请谨慎操作积分，注意操作的积分类型，仔细核对要调整的积分数值！</div>
+	<div class="panel-body">
+		<input type="hidden" name="suid" value="{$uid}" /> 
+		<div class="form-group">
+			<label class="col-xs-12 col-sm-3 col-md-2 control-label">会员卡号</label>
+			<div class="col-sm-9 col-xs-12">
+				<input type="text" class="form-control" name="r" value="{$profile['0']['cardsn']}" readonly="readonly"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-xs-12 col-sm-3 col-md-2 control-label">真实姓名</label>
+			<div class="col-sm-9 col-xs-12">
+				<input type="text" class="form-control" name="" value="{$profile['0']['realname']}" readonly="readonly" />
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label class="col-xs-12 col-sm-3 col-md-2 control-label">当前购物积分</label>
+			<div class="col-sm-9 col-xs-12">
+				<input type="text" class="form-control" name="mobile" value="{$profile['0']['bscore']}" readonly="readonly" />
+			</div>
+		</div>
+		<div class="form-group">
+				<label class="col-xs-12 col-sm-3 col-md-2 control-label">购物积分调整</label>
+				<label class="col-sm-1 col-xs-12 control-label">增加：</label>
+				<div class="col-sm-3 col-xs-12">
+					<input type="text" class="form-control" name="bsadd" value="" placeholder="请输入增加值" />
+				</div>
+				<label class="col-sm-1 col-xs-12 control-label">减少：</label>
+				<div class="col-sm-3 col-xs-12">
+					<input type="text" class="form-control" name="bssub" value="" placeholder="请输入减小值" />
+				</div>
+		</div>
+		<div class="form-group">
+			<label class="col-xs-12 col-sm-3 col-md-2 control-label">当前停车积分</label>
+			<div class="col-sm-9 col-xs-12">
+				<input type="text" class="form-control" name="" value="{$profile['0']['pscore']}" readonly="readonly" />
+			</div>
+		</div>
+		<div class="form-group">
+				<label class="col-xs-12 col-sm-3 col-md-2 control-label">停车积分调整</label>
+				<label class="col-sm-1 col-xs-12 control-label">增加：</label>
+				<div class="col-sm-3 col-xs-12">
+					<input type="text" class="form-control" name="psadd" value="" placeholder="请输入增加值" />
+				</div>
+				<label class="col-sm-1 col-xs-12 control-label">减少：</label>
+				<div class="col-sm-3 col-xs-12">
+					<input type="text" class="form-control" name="pssub" value="" placeholder="请输入减小值" />
+				</div>
+		</div>
+	</div>
+</div>
+	<div class="form-group">
+		<div class="col-sm-12">
+			<button type="submit" class="btn btn-primary col-lg-1" name="submit" value="提交">提交</button>
+		</div>
+	</div>
+</form>
+{/if}
+</div>
+{/if}
+
+{template 'common/footer'}

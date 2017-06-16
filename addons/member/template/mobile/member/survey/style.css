@@ -1,0 +1,21 @@
+.top{width:100%}
+
+.weui-cells__title{font-size:1.1em !important;margin-bottom: .5em;margin-top:1.2em;color:#333 !important;}
+body{background:#3EC5FF url(top.png) no-repeat;background-size:100% auto;}
+form{background:#F8F8F8;margin:2% 2%;width:96%;padding-top:1px;border-radius:5px;}
+#mian{margin-top:48%;padding:1% 0 2%;background-image:linear-gradient(90deg, #28A9FE 0%,#8E58E2 50%,#F707C4 100%);display:block;border-radius:10px;width:96%;margin-left:2%;}
+.weui-cell__bd{color:#666}
+.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{color:#409FFF;}
+.weui-btn_primary{background:#409FFF;}
+
+.js_hide{display:none;}
+.js_show{display:block;}
+.msg_success{
+	background: #f8f8f8;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}

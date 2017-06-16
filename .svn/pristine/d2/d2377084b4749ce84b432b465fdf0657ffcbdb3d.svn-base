@@ -1,0 +1,113 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/2/10
+ * Time: 11:08
+ */
+
+namespace App\Controllers;
+
+
+use App\Helper\Helper;
+use App\Repository\Repositories;
+use App\Library\Core;
+use EasyWeChat\Foundation\Application;
+
+/**
+ * Class WeChatController
+ * @package App\Controllers
+ */
+class WeChatController
+{
+    protected $item;
+
+    public function __construct(Repositories $item)
+    {
+        $this->item = $item;
+    }
+
+
+    public function getToken()
+    {
+        $app =$this->item->getWeChatApplication();
+
+        $access_token =$app->access_token;
+        echo  $access_token->getToken();
+    }
+
+    public function serve()
+    {
+        $app = $this->item->getWeChatApplication();
+        $server = $app->server;
+
+        /**
+         *  微信被动接受消息入口
+         */
+        $server->setMessageHandler(function($message){
+            if($message->MsgType == 'event'){
+                // 事件映射至类名
+                $class = Helper::eventToClass($message->Event);
+                $className = "\\App\\Event\\".$class;
+                if(in_array($message->Event,Helper::$eventList)){
+                    // 由对应的类名加载处理微信事件
+                   $item=new Core(new $className);
+                   $item->MsgHandle($message);
+
+
+                }
+            }
+        });
+
+        //数据token 验证
+        $response = $server->serve();
+        $response->send();
+    }
+
+    public function createcard()
+    {
+        $app = $this->item->getWeChatApplication();
+        $card = $app->card;
+        $cardType = 'GROUPON';
+        $baseInfo = [
+            'logo_url' => 'http://mmbiz.qpic.cn/mmbiz/2aJY6aCPatSeibYAyy7yct9zJXL9WsNVL4JdkTbBr184gNWS6nibcA75Hia9CqxicsqjYiaw2xuxYZiaibkmORS2oovdg/0',
+            'brand_name' => '测试商户造梦空间',
+            'code_type' => 'CODE_TYPE_QRCODE',
+            'title' => '测试',
+            'sub_title' => '测试副标题',
+            'color' => 'Color010',
+            'notice' => '测试使用时请出示此券',
+            'service_phone' => '15311931577',
+            'description' => "测试不可与其他优惠同享\n如需团购券发票，请在消费时向商户提出\n店内均可使用，仅限堂食",
+            'date_info' => [
+                'type' => 'DATE_TYPE_FIX_TERM',
+                'fixed_term' => 90, //表示自领取后多少天内有效，不支持填写0
+                'fixed_begin_term' => 0, //表示自领取后多少天开始生效，领取后当天生效填写0。
+            ],
+            'sku' => [
+                'quantity' => '0', //自定义code时设置库存为0
+            ],
+            //'location_id_list' => ['461907340'],  //获取门店位置poi_id，具备线下门店的商户为必填
+            'get_limit' => 1,
+            'use_custom_code' => true, //自定义code时必须为true
+            'get_custom_code_mode' => 'GET_CUSTOM_CODE_MODE_DEPOSIT',  //自定义code时设置
+            'bind_openid' => false,
+            'can_share' => true,
+            'can_give_friend' => false,
+            'center_title' => '顶部居中按钮',
+            'center_sub_title' => '按钮下方的wording',
+            'center_url' => 'http://www.qq.com',
+            'custom_url_name' => '立即使用',
+            'custom_url' => 'http://www.qq.com',
+            'custom_url_sub_title' => '6个汉字tips',
+            'promotion_url_name' => '更多优惠',
+            'promotion_url' => 'http://www.qq.com',
+            'source' => '造梦空间',
+        ];
+        $especial = [
+            'deal_detail' => 'deal_detail',
+        ];
+        $result = $card->create($cardType, $baseInfo, $especial);
+        var_dump($result);
+    }
+}

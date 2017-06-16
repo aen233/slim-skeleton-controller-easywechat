@@ -1,0 +1,162 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/2/8
+ * Time: 16:22
+ */
+
+namespace App\Controllers;
+use App\Repository\CardRepository;
+
+use App\Repository\Repositories;
+
+
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
+use App\Library\Card;
+
+
+class IndexController
+{
+
+    protected $item;
+
+    
+    public function __construct(Repositories $item,Controller $twig)
+    {
+        $this->item = $item;
+        $this->db = $item->getMedooInstance();
+        $this->twig=$twig;
+    }
+
+    public function index(RequestInterface $request , ResponseInterface $response)
+    {
+        $sqlcitygzh="SELECT C.acount,city from(select A.gzh,count(*) as acount from ims_mc_ownerinfo as A left join ims_mc_womencard as B on B.openid=A.openid  group by A.gzh) as C inner join ims_mc_gzhcity as D on D.gzh=C.gzh";
+        $data = $this->db->query($sqlcitygzh)->fetchall();
+        $gzh=array_column($data,'city');
+        $gzhcount=array_column($data,'acount');
+        foreach ($gzhcount as $v) {$k[]=(int)$v;}
+        $gzh=json_encode($gzh,JSON_UNESCAPED_UNICODE);
+        $datagzhcount=json_encode($k);
+        return $this->twig->view->render($response, 'chart.twig',
+            ['gzh'=>$gzh, 'datagzhcount'=>$datagzhcount]);
+    }
+
+    public function countpie(RequestInterface $request , ResponseInterface $response)
+    {
+        $ownerinfocount=$this->db->count("ims_mc_ownerinfo","*");
+
+        $womencardcount=$this->db->count("ims_mc_womencard","*");
+
+        $shancount=$this->db->count("ims_mc_ownerinfo",[
+            "[><]ims_mc_womencard"=>"openid"
+        ],"*",["platenumber[~]"=>"陕"]);
+
+
+        $sql = "SELECT C.acount as value,city as name FROM(SELECT SUBSTRING(A.platenumber,1,2) AS plate, COUNT(*) AS acount FROM ims_mc_ownerinfo AS A INNER JOIN ims_mc_womencard AS B ON B.openid=A.openid WHERE SUBSTRING(A.platenumber,1,1)='陕' GROUP BY plate)AS C inner JOIN ims_mc_platecity AS D ON D.plate=C.plate  ORDER BY C.plate ASC";
+        $list = $this->db->query($sql)->fetchall();
+        $shancountother=array_sum(array_column($list,'value'));
+
+
+        $noshanxisql="SELECT COUNT(*) AS value,SUBSTRING(A.platenumber,1,1) AS name FROM ims_mc_ownerinfo AS A INNER JOIN ims_mc_womencard AS B ON B.openid=A.openid where SUBSTRING(A.platenumber,1,1)!='陕' GROUP BY SUBSTRING(A.platenumber,1,1) ORDER BY value DESC  LIMIT 5";
+        $listnon = $this->db->query($noshanxisql)->fetchall();
+        $othercount=array_sum(array_column($listnon,'value'));
+
+        $countsxother[0]=[
+            'value'=>$shancount-$shancountother,
+            'name'=>'陕西其他'
+        ];
+        $wei=[
+            'value'=>$ownerinfocount-$womencardcount,
+            'name'=>'未领卡'
+        ];
+        $weiwei[0]=$wei;
+
+        $arrall=[
+            [
+                'value'=>$shancount,
+                'name'=>'陕西'
+            ],
+            [
+                'value'=>$womencardcount-$shancount,
+                'name'=>'其他省'
+            ],
+            $wei,
+        ];
+
+        $other[0]=array(
+            'value'=>($womencardcount-$shancount)-$othercount,
+            'name'=>'其他'
+        );
+        $list=array_merge($list,$countsxother,$listnon,$other,$weiwei);
+        $name=json_encode(array_column(array_merge($arrall,$list),'name'));
+        $acount=json_encode($list);
+        $acountall=json_encode($arrall);
+        return $this->twig->view->render($response, 'areapie.twig',
+            [
+                'acount'=>$acount,
+                'acountall'=>$acountall,
+                'acountname'=>$name
+            ]);
+    }
+    public function gzhpie(RequestInterface $request , ResponseInterface $response)
+    {
+        $sql = "SELECT C.acount as value,D.city as name from(select A.gzh,count(*) as acount from ims_mc_ownerinfo as A left join ims_mc_womencard as B on B.openid=A.openid  group by A.gzh) as C inner join ims_mc_gzhcity as D on D.gzh=C.gzh";
+        $list = $this->db->query($sql)->fetchall();
+        $name=json_encode(array_column($list,'name'));
+        $acount=json_encode($list);
+        //var_dump($name);
+        return $this->twig->view->render($response, 'gzhpie.twig',
+            [
+                'acount'=>$acount,
+                'acountname'=>$name
+            ]);
+    }
+
+    public function funnel(RequestInterface $request , ResponseInterface $response)
+    {
+        //$uv = $this->db->count("ims_mc_getlocation", "*", ['id[<=]' => 24044]);
+        //$down = $this->db->select("ims_mc_getlocation", "*", ['id' => 24044]);
+        //var_dump($uv);
+        echo "<br/>";
+        //var_dump($down);
+        //$card = $this->db->count("ims_mc_womencard", "*", ['get_time[<]' => $down[0]['time']]);
+        echo "<br/>";
+        //var_dump($card);
+
+        $pv= $this->db->count("ims_mc_womencard", "*",[
+        "get_time[<>]"=>[1487933962,1487933962+86400]]);
+        var_dump($pv);
+        $uv=$this->db->count("ims_mc_getlocation", ["distinct"=>"openid"]);
+        echo "<br/>";
+        var_dump($uv);
+        $womencardcount = $this->db->count("ims_mc_womencard", "*");
+        echo "<br/>";
+        var_dump($womencardcount);
+        for($i=0;$i<17;$i++)
+        {
+            $first[$i] = $this->db->select("ims_mc_womencard", [
+                "[><]ims_mc_ownerinfo" => "openid"
+            ], "*", ["gzh" => $i, "LIMIT" => 1]);
+            $first[$i][0]['count']=$this->db->count("ims_mc_womencard", [
+            "[><]ims_mc_ownerinfo" => "openid"
+        ], "*", ["gzh" => $i]);
+            $first[$i][0]['day']=$this->db->count("ims_mc_womencard", [
+                "[><]ims_mc_ownerinfo" => "openid"
+            ], "*", ["gzh" => $i]);
+            if(!empty($first[$i][0]))
+            $first[$i]=$first[$i][0];
+        }
+        echo "<br/>";
+        var_dump($first);
+        echo "<br/>";
+
+        //echo "json_encode(array_column($list,'name'));
+        //$acount=json_encode($list);
+        //var_dump($name);
+        return $this->twig->view->render($response, 'funnel.twig');
+    }
+
+}

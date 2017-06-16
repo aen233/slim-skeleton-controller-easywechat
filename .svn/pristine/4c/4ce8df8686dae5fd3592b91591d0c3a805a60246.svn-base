@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lin
+ * Date: 17-2-8
+ * Time: 上午9:36
+ */
+
+namespace App\Event;
+
+
+interface EventReceiver
+{
+    public  function handle($message);
+}

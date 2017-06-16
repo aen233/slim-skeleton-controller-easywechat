@@ -1,0 +1,226 @@
+<?php
+
+
+namespace App\Library;
+
+use \SoapClient;
+
+class Card
+{
+    /**
+     * Soap 正式库地址
+     *
+     * @const string
+     */
+    const CUSTOMER = 'http://113.140.80.194:8090/soap/customer/service/?wsdl';
+
+    /**
+     * Soap 测试库地址
+     *
+     * @const string
+     */
+    const CUSTOMER_TEST = 'http://113.140.80.194:8091/soap/customer/service/?wsdl';
+
+    /**
+     * @var CardApi
+     */
+    private $connect;
+
+    /**
+     * @var string
+     */
+    private $url;
+
+
+    public function __construct($tag = true)
+    {	
+		try{
+			$this->url     = 'http://soap.sagabuy.com/v1/customer.xml';
+			$this->connect = new SoapClient($this->url, array('trace' => true, 'exceptions' => true));
+		}catch(Exception $e){
+			print $e->getMessage()."   error";
+			exit();
+		}
+    }
+
+    /**
+     * 获取会员卡编号CustId
+     *
+     * @param array $data
+     *
+     * @return bool
+     */
+    public function getCustomerCustID(array $data)
+    {
+        $request  = $this->connect->__soapCall('getCustomerCustID', array($data));
+        $response = json_decode($request->getCustomerCustIDResult, true);
+
+        if (!empty($response['custId'])) {
+            return $response['custId'];
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * 获取会员信息
+     *
+     * @param int $custId
+     *
+     * @return mixed
+     */
+    public function getCustomerInfo($custId = 0)
+    {
+        $request  = $this->connect->__soapCall('getCustomerInfo', array(array('custId' => $custId)));
+        $response = json_decode($request->getCustomerInfoResult, true);
+
+        if (empty($response['error'])) {
+            return json_decode($response['infoList'][0], true);
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * 获取会员卡信息
+     *
+     * @param int $custId
+     *
+     * @return mixed
+     */
+    public function getCustomerCard($custId = 0)
+    {
+        $request  = $this->connect->__soapCall('getCustomerCard', array(array('custId' => $custId)));
+        $response = json_decode($request->getCustomerCardResult, true);
+
+        if (empty($response['error'])) {
+            return json_decode($response['cardList'][0], true);
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * 获取会员积分
+     *
+     * @param int $custId
+     *
+     * @return mixed
+     */
+    public function getCustomerScore($custId = 0)
+    {
+        $request  = $this->connect->__soapCall('getCustomerScore', array(array('custId' => $custId)));
+        $response = json_decode($request->getCustomerScoreResult, true);
+        if (empty($response['error'])) {
+            $score = json_decode($response['scoreList'][0], true);
+            return $score['scoreBalance'];
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * 获取购物记录
+     *
+     * @param int $cardId
+     * @param int $page
+     * @param int $pageCount
+     *
+     * @return bool
+     */
+    public function getCustomerSale($cardId = 0, $page = 1, $pageCount = 10)
+    {
+        $request  = $this->connect->__soapCall('getCustomerSale', array(
+            array(
+                'cardId'    => $cardId,
+                'page'      => $page,
+                'pagecount' => $pageCount
+            )
+        ));
+        $response = json_decode($request->getCustomerSaleResult, true);
+
+        if (empty($response['error']) && !empty($response['saleList'])) {
+            $sale = $response['saleList'];
+            array_walk($sale, array($this, 'saleToArray'));
+            return $sale;
+        } else {
+            return false;
+        }
+    }
+
+    public function getBillInfor($billId)
+    {
+        $request = $this->connect->__soapCall('getBillInfor',array(array('billId'=>$billId)));
+        $response = json_decode($request->getBillInforResult,true);
+        return $response;
+    }
+
+    /**
+     * 注册新会员
+     *
+     * @param array $data
+     *
+     * @return bool
+     */
+    public function saveCustomer(array $data)
+    {
+        if (empty($data))
+            return false;
+
+        $request  = $this->connect->__soapCall('saveCustomer1', array($data));
+        $response = json_decode($request->saveCustomer1Result, true);
+
+        return $response;
+        /*if (empty($response['error'])) {
+            return $response['custId'];
+        } else {
+            return false;
+        }*/
+    }
+
+    /**
+     * 会员积分设置
+     *
+     * @param string $cardid
+     * @param string $scoreNum
+     * @param string $shopId
+     * @param string $scoreId
+     * @param string $userId
+     * @param string $money
+     * @param string $flag
+     * @param string $scoreFlag
+     *
+     * @return bool
+     */
+    public function setCustomerScore($cardid = '0', $scoreNum = '0', $shopId = '01', $scoreId = '20000001', $userId = '9527', $money = '0', $flag = '02', $scoreFlag = '0')
+    {
+        $data         = array(
+            'cardId'    => $cardid,
+            'shopId'    => $shopId,
+            'scoreNum'  => $scoreNum,
+            'scoreId'   => $scoreId,
+            'money'     => $money,
+            'userId'    => $userId,
+            'flag'      => $flag,
+            'scoreFlag' => $scoreFlag
+        );
+        $request = $this->connect->__soapCall('setCustomerScore',array($data));
+        $response = json_decode($request->setCustomerScoreResult,true);
+
+        if(empty($response['error'])){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    /**
+     * @param $value
+     * @param $key
+     */
+    private function saleToArray(&$value, $key)
+    {
+        $value = json_decode($value, true);
+    }
+}

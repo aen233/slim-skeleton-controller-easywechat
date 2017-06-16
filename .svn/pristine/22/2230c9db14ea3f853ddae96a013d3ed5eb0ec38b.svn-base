@@ -1,0 +1,57 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lin
+ * Date: 17-2-9
+ * Time: 下午2:39
+ */
+
+namespace App\Repository;
+
+use App\Controllers\Controller;
+use EasyWeChat\Foundation\Application;
+use Medoo\medoo;
+
+
+
+/**
+ * Class Repositories
+ * @package App\Repository
+ */
+class Repositories
+{
+    /**
+     * @var
+     */
+    protected $settings;
+
+    /**
+     * Repositories constructor.
+     */
+    public function __construct()
+    {
+        $dir=realpath(__DIR__ .'/../../config');
+        $config = $dir.'/settings.php';
+
+        $this->settings = require $config;
+    }
+
+    /**
+     * @return Application
+     */
+    public function getWeChatApplication()
+    {
+        $arg = $this->settings['settings'];
+        return new Application($arg['wechat']);
+    }
+
+    /**
+     * @return medoo
+     */
+    public function getMedooInstance()
+    {
+        $arg=$this->settings['settings'];
+        return new medoo($arg['mysql']);
+    }
+
+}

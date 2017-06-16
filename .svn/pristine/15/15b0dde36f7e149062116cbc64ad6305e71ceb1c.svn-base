@@ -1,0 +1,50 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lin
+ * Date: 17-2-8
+ * Time: 上午9:40
+ */
+
+namespace App\Helper;
+
+/**
+ * Class Helper
+ * @package App\Helper
+ */
+class Helper
+{
+    /**
+     * @var
+     */
+    protected static $externalSign = [];
+
+    public static $eventList = [
+        'subscribe',
+        'user_get_card',
+    ];
+    /**
+     *  替换事件字符串
+     * @param $event
+     * @return string
+     */
+    public static function eventToClass($event)
+    {
+        return str_replace(' ','', ucwords(str_replace('_',' ',$event)));
+    }
+
+
+    public static function setSign($settings)
+    {
+        self::$externalSign = $settings;
+    }
+
+    /**
+     * @return mixed
+     */
+    public static function getExternalSign()
+    {
+        return self::$externalSign;
+    }
+
+}
